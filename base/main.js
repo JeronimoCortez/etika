@@ -49,8 +49,19 @@
     });
   }
 
+  function setupFloatingWhatsapp() {
+    const button = document.getElementById('floating-whatsapp');
+    if (!button) return;
+
+    const configuredUrl = document.body ? document.body.dataset.whatsappUrl : '';
+    if (configuredUrl) {
+      button.setAttribute('href', configuredUrl);
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     setupMobileMenu();
     setupFaqAccordion();
+    setupFloatingWhatsapp();
   });
 })();

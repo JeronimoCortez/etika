@@ -24,7 +24,6 @@
   #productos,
   #obras-sociales,
   #proceso,
-  #testimonios,
   #contacto,
   #faq {
     padding-top: 3.5rem;
@@ -78,76 +77,189 @@
   }
 }
 
-/* Brand color system: visual identity only (no layout/typography changes) */
+/* Brand color system */
 :root {
-  --brand-primary: #821D21;
-  --brand-secondary: #D99119;
-  --brand-bg: #FFFFFF;
-  --brand-primary-soft: rgba(130, 29, 33, 0.2);
+  --brand-primary: #0284c7;
+  --brand-primary-strong: #0369a1;
+  --brand-secondary: #0ea5e9;
+  --brand-bg: #ffffff;
+  --brand-surface: #e0f2fe;
+  --brand-border: #bae6fd;
+  --brand-text: #0f172a;
 }
 
-/* Highlighted surfaces and dark blocks */
 .bg-neutral-900 {
-  background-color: var(--brand-primary) !important;
+  background-color: var(--brand-primary-strong) !important;
 }
 
 .bg-neutral-800 {
-  background-color: #6a171b !important;
+  background-color: var(--brand-primary) !important;
 }
 
 .bg-neutral-100,
 .bg-neutral-200,
 .bg-neutral-300 {
-  background-color: var(--brand-primary-soft) !important;
+  background-color: var(--brand-surface) !important;
 }
 
-.bg-neutral-50 {
+.bg-neutral-50,
+.bg-white {
   background-color: var(--brand-bg) !important;
 }
 
-/* Borders */
+.text-neutral-900 {
+  color: var(--brand-text) !important;
+}
+
 .border-neutral-900 {
-  border-color: var(--brand-primary) !important;
+  border-color: var(--brand-primary-strong) !important;
 }
 
 .border-neutral-300,
-.border-neutral-200 {
-  border-color: var(--brand-primary-soft) !important;
+.border-neutral-200,
+.border-neutral-800 {
+  border-color: var(--brand-border) !important;
 }
 
-/* Interactive states */
 .hover\:bg-neutral-900:hover,
 .hover\:bg-neutral-800:hover {
   background-color: var(--brand-secondary) !important;
 }
 
-.hover\:bg-neutral-700:hover {
-  background-color: #b67916 !important;
-}
-
 .hover\:bg-neutral-100:hover,
-.hover\:bg-neutral-50:hover {
-  background-color: var(--brand-primary-soft) !important;
+.hover\:bg-neutral-50:hover,
+.hover\:bg-neutral-700:hover {
+  background-color: #c9ecff !important;
 }
 
 .focus\:ring-neutral-900:focus {
   --tw-ring-color: var(--brand-primary) !important;
 }
 
-/* Links + icons: keep text legible, color only interactive accents */
-a[href] {
-  transition: color 180ms ease, fill 180ms ease, stroke 180ms ease;
-}
-
-a[href]:not([class*="bg-"]):hover {
-  color: var(--brand-secondary);
-}
-
+a[href],
 i svg,
 a svg {
   transition: color 180ms ease, fill 180ms ease, stroke 180ms ease;
 }
 
+a[href]:not([class*="bg-"]):hover {
+  color: var(--brand-primary);
+}
+
 a:not([class*="bg-"]):hover svg {
-  color: var(--brand-secondary);
+  color: var(--brand-primary);
+}
+
+a.bg-neutral-900,
+button.bg-neutral-900 {
+  box-shadow: 0 10px 22px -14px rgba(2, 132, 199, 0.9);
+}
+
+/* Floating WhatsApp */
+.floating-whatsapp {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 70;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 3.5rem;
+  padding: 0 1rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: #ffffff;
+  box-shadow: 0 14px 28px -14px rgba(2, 132, 199, 0.85);
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px -16px rgba(2, 132, 199, 0.9);
+  background: linear-gradient(135deg, #22b4f0, #0284c7);
+}
+
+.floating-whatsapp svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.floating-whatsapp span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Chatbot placeholder */
+.chatbot-placeholder {
+  position: fixed;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 65;
+  width: 19rem;
+  background-color: #ffffff;
+  border: 1px solid var(--brand-border);
+  border-radius: 0.9rem;
+  box-shadow: 0 18px 30px -22px rgba(2, 132, 199, 0.75);
+  padding: 0.9rem;
+}
+
+.chatbot-placeholder__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.55rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--brand-text);
+}
+
+.chatbot-placeholder__status {
+  background-color: var(--brand-surface);
+  color: var(--brand-primary-strong);
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.chatbot-placeholder__text {
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #475569;
+}
+
+.chatbot-placeholder__button {
+  width: 100%;
+  border: 1px solid var(--brand-border);
+  background-color: #ffffff;
+  color: #64748b;
+  border-radius: 0.6rem;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 8.5rem;
+  }
+
+  .floating-whatsapp {
+    right: 1rem;
+    bottom: 1rem;
+    height: 3.3rem;
+    padding: 0 0.9rem;
+  }
+
+  .floating-whatsapp span {
+    display: none;
+  }
+
+  .chatbot-placeholder {
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    bottom: 5.3rem;
+  }
 }
