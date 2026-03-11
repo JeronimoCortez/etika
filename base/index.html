@@ -1,1805 +1,1325 @@
-﻿<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body
-    class="h-full text-base-content"
-    data-whatsapp-url="https://web.whatsapp.com/send?phone=5491112345678&text=Hola%20ETICA%2C%20quiero%20informacion%20sobre%20alquiler%20o%20venta%20de%20equipamiento%20medico."
-  >
-    <div
-      id="top-bar"
-      class="hidden lg:block w-full bg-neutral-900 text-white py-2 px-4"
-    >
-      <div
-        class="container mx-auto flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm"
-      >
-        <p class="mb-1 sm:mb-0">
-          Envíos a todo el país • Atención profesional garantizada
-        </p>
-        <div class="flex items-center space-x-4">
-          <span>
-            <i class="mr-2" data-fa-i2svg="">
-              <svg
-                class="svg-inline--fa fa-phone"
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="phone"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                data-fa-i2svg=""
-              >
-                <path
-                  fill="currentColor"
-                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-                ></path>
-              </svg>
-            </i>
-            0800-555-ETICA (38422)
-          </span>
-        </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ETICA — Alquiler y venta de equipamiento médico de alta complejidad. Entrega en 24 horas. Convenio con más de 45 obras sociales. Habilitados por ANMAT." />
+  <title>ETICA Equipamiento Médico — Alquiler y Venta | Argentina</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#005C8F', dark: '#004A75', light: '#EEF4FA' },
+            accent: '#00A8CC',
+            surface: '#F7F9FC',
+            navy: '#0B1F2E',
+            ink: { DEFAULT: '#1A2B3C', muted: '#5A7184' },
+            edge: '#D4E2EF',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Instrument Serif"', 'Georgia', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body
+  class="bg-white text-ink"
+  data-whatsapp-url="https://wa.me/5491112345678?text=Hola%20ETICA%2C%20quiero%20información%20sobre%20equipamiento%20médico."
+>
+
+  <!-- ══════════════════════════════════════════
+       TOP BAR
+  ══════════════════════════════════════════ -->
+  <div class="hidden lg:block w-full bg-navy text-white py-2 px-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between text-xs tracking-wide">
+      <p class="text-white/70">
+        <span class="text-white font-medium">Envíos a todo el país</span>
+        &nbsp;·&nbsp; Atención profesional garantizada
+      </p>
+      <div class="flex items-center gap-6 text-white/80">
+        <a href="mailto:info@eticamedica.com.ar" class="hover:text-white transition-colors">
+          <i class="fa-solid fa-envelope mr-1.5"></i>info@eticamedica.com.ar
+        </a>
+        <span>
+          <i class="fa-solid fa-phone mr-1.5"></i>0800-555-ETICA (38422)
+        </span>
       </div>
     </div>
-    <header
-      id="header"
-      class="w-full bg-white border-b border-neutral-200 sticky top-0 z-50"
-    >
-      <div class="container mx-auto px-4 py-4">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center">
-            <div
-              class="w-32 h-10 bg-neutral-800 flex items-center justify-center"
-            >
-              <span class="text-white text-xl"> ETICA </span>
-            </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════ -->
+  <header id="header" class="w-full bg-white/95 backdrop-blur-sm border-b border-edge sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="9" fill="#005C8F"/>
+            <rect x="15.5" y="9" width="5" height="18" rx="2.5" fill="white"/>
+            <rect x="9" y="15.5" width="18" height="5" rx="2.5" fill="white"/>
+          </svg>
+          <div class="flex flex-col leading-none">
+            <span class="text-lg font-bold tracking-[0.12em] text-ink">ETICA</span>
+            <span class="text-[10px] font-medium tracking-[0.14em] text-ink-muted uppercase mt-0.5">Equipamiento Médico</span>
           </div>
-          <nav class="hidden lg:flex items-center space-x-8">
-            <a
-              href="#servicios"
-              class="text-neutral-700 hover:text-neutral-900"
-            >
-              Servicios
-            </a>
-            <a
-              href="#productos"
-              class="text-neutral-700 hover:text-neutral-900"
-            >
-              Productos
-            </a>
-            <a
-              href="#institucional"
-              class="text-neutral-700 hover:text-neutral-900"
-            >
-              Institucional
-            </a>
-            <a
-              href="#obras-sociales"
-              class="text-neutral-700 hover:text-neutral-900"
-            >
-              Obras Sociales
-            </a>
-          </nav>
-          <div class="flex items-center space-x-3">
-            <a
-              href="#contacto"
-              class="hidden sm:inline-flex px-6 py-2 bg-neutral-900 text-white rounded-md hover:bg-neutral-800 text-sm"
-            >
-              Cotizar
-            </a>
-            <button
-              id="mobile-menu-toggle"
-              class="lg:hidden p-2 border border-neutral-300 rounded-md"
-              type="button"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-              aria-label="Abrir menú"
-            >
-              <i class="text-xl" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-bars"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="bars"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                  ></path>
-                </svg>
-              </i>
-            </button>
-          </div>
-        </div>
-        <nav
-          id="mobile-menu"
-          class="hidden lg:hidden border-t border-neutral-200 mt-4 pt-4 space-y-3"
-        >
-          <div class="bg-neutral-900 text-white rounded-lg px-4 py-3 text-sm">
-            <p class="mb-1">
-              Envíos a todo el país • Atención profesional garantizada
-            </p>
-            <p>0800-555-ETICA (38422)</p>
-          </div>
-          <a href="#servicios" class="block text-neutral-700 py-2">
-            Servicios
-          </a>
-          <a href="#productos" class="block text-neutral-700 py-2">
-            Productos
-          </a>
-          <a href="#institucional" class="block text-neutral-700 py-2">
-            Institucional
-          </a>
-          <a href="#obras-sociales" class="block text-neutral-700 py-2">
-            Obras Sociales
-          </a>
-          <div class="pt-2 space-y-2">
-            <a
-              href="#contacto"
-              class="block w-full text-center px-6 py-2 bg-neutral-900 text-white rounded-md hover:bg-neutral-800 text-sm"
-            >
-              Cotizar
-            </a>
-          </div>
+        </a>
+
+        <!-- Nav desktop -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#servicios" class="text-sm text-ink-muted hover:text-brand transition-colors font-medium">Servicios</a>
+          <a href="#productos" class="text-sm text-ink-muted hover:text-brand transition-colors font-medium">Productos</a>
+          <a href="#institucional" class="text-sm text-ink-muted hover:text-brand transition-colors font-medium">Institucional</a>
+          <a href="#obras-sociales" class="text-sm text-ink-muted hover:text-brand transition-colors font-medium">Obras Sociales</a>
         </nav>
-      </div>
-    </header>
-    <section id="hero" class="w-full py-4 lg:py-6">
-      <div class="mx-auto w-full px-4" style="max-width: 80%">
-        <div
-          class="relative isolate overflow-hidden rounded-[28px] h-[55vh] sm:h-[60vh] lg:h-[65vh]"
-        >
-          <img
-            src="etika.webp"
-            alt=""
-            class="absolute inset-0 w-full h-full object-cover"
-          />
 
-          <!-- bg-gradient-to-r from-[#0072B1]/85 via-[#1E8DC9]/68 to-[#0B2F44]/30 gradient azul -->
-
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/10"
-          ></div>
-
-          <div
-            class="relative z-10 flex h-full items-center px-6 py-4 sm:px-10 lg:px-14"
+        <!-- CTA + hamburger -->
+        <div class="flex items-center gap-3">
+          <a
+            href="https://wa.me/5491112345678?text=Hola%20ETICA%2C%20quiero%20información%20sobre%20equipamiento%20médico."
+            class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-brand text-white rounded-md text-sm font-medium hover:bg-brand-dark transition-colors"
           >
-            <div class="max-w-2xl space-y-5">
-              <h1
-                class="text-white font-bold text-3xl sm:text-4xl lg:text-7xl leading-[0.95]"
-              >
-                Cuidado al paciente
-              </h1>
-
-              <p
-                class="text-base sm:text-lg text-white leading-relaxed max-w-xl"
-              >
-                Lideres en alquiler y venta de equipamiento medico de alta
-                complejidad con atencion inmediata
-              </p>
-
-              <div class="flex flex-wrap items-center gap-3">
-                <a
-                  href="#servicios"
-                  class="h-12 min-w-[130px] px-6 bg-white text-[#0072B1] rounded-full flex items-center justify-center text-base"
-                >
-                  Alquiler &rarr;
-                </a>
-
-                <a
-                  href="#productos"
-                  class="h-12 min-w-[130px] px-6 bg-white/10 border border-white/35 text-white rounded-full flex items-center justify-center text-base"
-                >
-                  Venta
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      id="metrics"
-      class="w-full bg-white border-y border-neutral-200 py-12"
-    >
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div class="text-center">
-            <div class="text-4xl sm:text-5xl text-neutral-900 mb-2">15+</div>
-            <div class="text-sm text-neutral-600">Años de experiencia</div>
-          </div>
-          <div class="text-center">
-            <div class="text-4xl sm:text-5xl text-neutral-900 mb-2">12K+</div>
-            <div class="text-sm text-neutral-600">Pacientes asistidos</div>
-          </div>
-          <div class="text-center">
-            <div class="text-4xl sm:text-5xl text-neutral-900 mb-2">45+</div>
-            <div class="text-sm text-neutral-600">Obras sociales</div>
-          </div>
-          <div class="text-center">
-            <div class="text-4xl sm:text-5xl text-neutral-900 mb-2">23</div>
-            <div class="text-sm text-neutral-600">Provincias cubiertas</div>
-          </div>
-        </div>
-        <div class="border-t border-neutral-200 pt-8">
-          <p class="text-center text-sm text-neutral-500 mb-6">
-            Trabajamos con las principales obras sociales del país
-          </p>
-          <div
-            class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-6 items-center"
-          >
-            <div
-              class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto"
-            >
-              <img
-                src="/osde-logo.webp"
-                alt="OSDE"
-                class="w-full h-full object-contain object-center"
-              />
-            </div>
-
-            <div
-              class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto"
-            >
-              <img
-                src="/swiss-medical-logo.webp"
-                alt="Swiss Medical"
-                class="w-full h-full object-contain object-center"
-              />
-            </div>
-
-            <div
-              class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto"
-            >
-              <img
-                src="/galeno-logo.webp"
-                alt="Galeno"
-                class="w-full h-full object-contain object-center"
-              />
-            </div>
-
-            <div
-              class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto"
-            >
-              <img
-                src="/medife-logo.webp"
-                alt="Medifé"
-                class="w-full h-full object-contain object-center"
-              />
-            </div>
-
-            <div
-              class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto"
-            >
-              <img
-                src="/ioma-logo.webp"
-                alt="IOMA"
-                class="w-full h-full object-contain object-center"
-              />
-            </div>
-
-            <div
-              class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto"
-            >
-              <img
-                src="/pami-logo.webp"
-                alt="PAMI"
-                class="w-full h-full object-contain object-center"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="institucional" class="w-full bg-neutral-50 py-20">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="space-y-6">
-            <h2
-              class="text-3xl sm:text-4xl lg:text-5xl text-neutral-900 leading-tight"
-            >
-              Más que proveedores, somos aliados en salud
-            </h2>
-            <p class="text-lg text-neutral-600 leading-relaxed">
-              Durante más de 15 años, ETICA ha sido el socio estratégico de
-              instituciones médicas, profesionales de la salud y pacientes en
-              todo el país. Nuestra misión es garantizar acceso a tecnología
-              médica de vanguardia con el respaldo de un equipo altamente
-              capacitado.
-            </p>
-            <p class="text-lg text-neutral-600 leading-relaxed">
-              Cada equipo que entregamos cumple con los más altos estándares de
-              calidad y seguridad. Trabajamos bajo estrictas normativas de ANMAT
-              y mantenemos certificaciones internacionales que avalan nuestro
-              compromiso con la excelencia en el cuidado de la salud.
-            </p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-              <div class="bg-white rounded-xl p-6 border border-neutral-200">
-                <div
-                  class="w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center mb-4"
-                >
-                  <i class="text-white text-xl" data-fa-i2svg="">
-                    <svg
-                      class="svg-inline--fa fa-certificate"
-                      aria-hidden="true"
-                      focusable="false"
-                      data-prefix="fas"
-                      data-icon="certificate"
-                      role="img"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                      data-fa-i2svg=""
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"
-                      ></path>
-                    </svg>
-                  </i>
-                </div>
-                <h3 class="text-lg text-neutral-900 mb-2">Certificaciones</h3>
-                <p class="text-sm text-neutral-600">
-                  Habilitación ANMAT, ISO 9001 y certificaciones de fabricantes
-                  internacionales.
-                </p>
-              </div>
-              <div class="bg-white rounded-xl p-6 border border-neutral-200">
-                <div
-                  class="w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center mb-4"
-                >
-                  <i class="text-white text-xl" data-fa-i2svg="">
-                    <svg
-                      class="svg-inline--fa fa-users-gear"
-                      aria-hidden="true"
-                      focusable="false"
-                      data-prefix="fas"
-                      data-icon="users-gear"
-                      role="img"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 640 512"
-                      data-fa-i2svg=""
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M144 160A80 80 0 1 0 144 0a80 80 0 1 0 0 160zm368 0A80 80 0 1 0 512 0a80 80 0 1 0 0 160zM0 298.7C0 310.4 9.6 320 21.3 320H234.7c.2 0 .4 0 .7 0c-26.6-23.5-43.3-57.8-43.3-96c0-7.6 .7-15 1.9-22.3c-13.6-6.3-28.7-9.7-44.6-9.7H106.7C47.8 192 0 239.8 0 298.7zM320 320c24 0 45.9-8.8 62.7-23.3c2.5-3.7 5.2-7.3 8-10.7c2.7-3.3 5.7-6.1 9-8.3C410 262.3 416 243.9 416 224c0-53-43-96-96-96s-96 43-96 96s43 96 96 96zm65.4 60.2c-10.3-5.9-18.1-16.2-20.8-28.2H261.3C187.7 352 128 411.7 128 485.3c0 14.7 11.9 26.7 26.7 26.7H455.2c-2.1-5.2-3.2-10.9-3.2-16.4v-3c-1.3-.7-2.7-1.5-4-2.3l-2.6 1.5c-16.8 9.7-40.5 8-54.7-9.7c-4.5-5.6-8.6-11.5-12.4-17.6l-.1-.2-.1-.2-2.4-4.1-.1-.2-.1-.2c-3.4-6.2-6.4-12.6-9-19.3c-8.2-21.2 2.2-42.6 19-52.3l2.7-1.5c0-.8 0-1.5 0-2.3s0-1.5 0-2.3l-2.7-1.5zM533.3 192H490.7c-15.9 0-31 3.5-44.6 9.7c1.3 7.2 1.9 14.7 1.9 22.3c0 17.4-3.5 33.9-9.7 49c2.5 .9 4.9 2 7.1 3.3l2.6 1.5c1.3-.8 2.6-1.6 4-2.3v-3c0-19.4 13.3-39.1 35.8-42.6c7.9-1.2 16-1.9 24.2-1.9s16.3 .6 24.2 1.9c22.5 3.5 35.8 23.2 35.8 42.6v3c1.3 .7 2.7 1.5 4 2.3l2.6-1.5c16.8-9.7 40.5-8 54.7 9.7c2.3 2.8 4.5 5.8 6.6 8.7c-2.1-57.1-49-102.7-106.6-102.7zm91.3 163.9c6.3-3.6 9.5-11.1 6.8-18c-2.1-5.5-4.6-10.8-7.4-15.9l-2.3-4c-3.1-5.1-6.5-9.9-10.2-14.5c-4.6-5.7-12.7-6.7-19-3L574.4 311c-8.9-7.6-19.1-13.6-30.4-17.6v-21c0-7.3-4.9-13.8-12.1-14.9c-6.5-1-13.1-1.5-19.9-1.5s-13.4 .5-19.9 1.5c-7.2 1.1-12.1 7.6-12.1 14.9v21c-11.2 4-21.5 10-30.4 17.6l-18.2-10.5c-6.3-3.6-14.4-2.6-19 3c-3.7 4.6-7.1 9.5-10.2 14.6l-2.3 3.9c-2.8 5.1-5.3 10.4-7.4 15.9c-2.6 6.8 .5 14.3 6.8 17.9l18.2 10.5c-1 5.7-1.6 11.6-1.6 17.6s.6 11.9 1.6 17.5l-18.2 10.5c-6.3 3.6-9.5 11.1-6.8 17.9c2.1 5.5 4.6 10.7 7.4 15.8l2.4 4.1c3 5.1 6.4 9.9 10.1 14.5c4.6 5.7 12.7 6.7 19 3L449.6 457c8.9 7.6 19.2 13.6 30.4 17.6v21c0 7.3 4.9 13.8 12.1 14.9c6.5 1 13.1 1.5 19.9 1.5s13.4-.5 19.9-1.5c7.2-1.1 12.1-7.6 12.1-14.9v-21c11.2-4 21.5-10 30.4-17.6l18.2 10.5c6.3 3.6 14.4 2.6 19-3c3.7-4.6 7.1-9.4 10.1-14.5l2.4-4.2c2.8-5.1 5.3-10.3 7.4-15.8c2.6-6.8-.5-14.3-6.8-17.9l-18.2-10.5c1-5.7 1.6-11.6 1.6-17.5s-.6-11.9-1.6-17.6l18.2-10.5zM472 384a40 40 0 1 1 80 0 40 40 0 1 1 -80 0z"
-                      ></path>
-                    </svg>
-                  </i>
-                </div>
-                <h3 class="text-lg text-neutral-900 mb-2">Equipo Experto</h3>
-                <p class="text-sm text-neutral-600">
-                  Equipo especializado y biomédicos certificados con formación
-                  continua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="relative">
-            <div
-              class="w-full h-[600px] bg-[url('/frente_etika.webp')] bg-cover bg-center rounded-2xl overflow-hidden"
-            >
-              <div
-                class="w-full h-full flex items-center justify-center text-white text-lg p-8 text-center bg-black/40"
-              ></div>
-            </div>
-            <div
-              class="absolute top-6 right-6 bg-white rounded-xl shadow-xl px-6 py-4"
-            >
-              <div class="flex items-center space-x-3">
-                <div
-                  class="w-12 h-12 bg-neutral-900 rounded-full flex items-center justify-center"
-                >
-                  <i class="text-white" data-fa-i2svg="">
-                    <svg
-                      class="svg-inline--fa fa-shield-halved"
-                      aria-hidden="true"
-                      focusable="false"
-                      data-prefix="fas"
-                      data-icon="shield-halved"
-                      role="img"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                      data-fa-i2svg=""
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8V444.8C394 378 431.1 230.1 432 141.4L256 66.8l0 0z"
-                      ></path>
-                    </svg>
-                  </i>
-                </div>
-                <div>
-                  <p class="text-neutral-900">Garantía Total</p>
-                  <p class="text-xs text-neutral-600">En cada servicio</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="servicios" class="w-full bg-white py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl text-neutral-900 mb-4">
-            Servicios claros para cuidar al paciente
-          </h2>
-          <p class="text-lg text-neutral-600 max-w-3xl mx-auto">
-            Acompañamos a personas mayores, familiares y urgencias con opciones
-            simples de alquiler y venta de equipamiento medico.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            class="bg-white rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col"
-          >
-            <div class="w-full h-44 overflow-hidden border-b border-neutral-200">
-              <img
-                src="/servicio_alquiler.webp"
-                alt="Servicio de alquiler de equipamiento medico"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <div class="p-6 lg:p-7 flex-1">
-              <span
-                class="inline-flex items-center px-3 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs mb-4"
-              >
-                Alquiler
-              </span>
-              <h3 class="text-xl text-neutral-900 mb-3">
-                Alquiler de equipamiento medico
-              </h3>
-              <p class="text-neutral-600 leading-relaxed">
-                Entrega rapida y planes flexibles para recuperacion en casa,
-                acompanamiento diario o necesidades temporales.
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col"
-          >
-            <div class="w-full h-44 overflow-hidden border-b border-neutral-200">
-              <img
-                src="/servicio_venta.webp"
-                alt="Servicio de venta de equipamiento medico"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <div class="p-6 lg:p-7 flex-1">
-            <span
-              class="inline-flex items-center px-3 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs mb-4"
-            >
-              Venta
-            </span>
-            <h3 class="text-xl text-neutral-900 mb-3">
-              Venta de equipamiento medico
-            </h3>
-            <p class="text-neutral-600 leading-relaxed">
-              Equipos nuevos y seleccionados para el hogar o instituciones, con
-              ayuda clara para elegir.
-            </p>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col"
-          >
-            <div class="w-full h-44 overflow-hidden border-b border-neutral-200">
-              <img
-                src="/servicio_urgencias.webp"
-                alt="Servicio de urgencias de equipamiento medico"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <div class="p-6 lg:p-7 flex-1">
-            <span
-              class="inline-flex items-center px-3 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs mb-4"
-            >
-              Urgencias
-            </span>
-            <h3 class="text-xl text-neutral-900 mb-3">
-              Respuesta rapida para urgencias
-            </h3>
-            <p class="text-neutral-600 leading-relaxed">
-              Si lo necesitas hoy, coordinamos una solucion simple y una entrega
-              agil para cuidar al paciente.
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="productos" class="w-full bg-neutral-50 py-20">
-      <div class="container mx-auto px-4">
-        <div
-          class="flex flex-col sm:flex-row items-center justify-between mb-12"
-        >
-          <div>
-            <h2 class="text-3xl sm:text-4xl text-neutral-900 mb-2">
-              Productos Destacados
-            </h2>
-            <p class="text-neutral-600">
-              Equipamiento médico certificado de las mejores marcas
-            </p>
-          </div>
-
-          <div class="flex items-center space-x-3 mt-4 sm:mt-0">
-            <button
-              class="w-12 h-12 bg-white border border-neutral-300 rounded-full flex items-center justify-center hover:bg-neutral-100"
-            >
-              &larr;
-            </button>
-
-            <button
-              class="w-12 h-12 bg-white border border-neutral-300 rounded-full flex items-center justify-center hover:bg-neutral-100"
-            >
-              &rarr;
-            </button>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Producto 1 -->
-          <div
-            class="bg-white rounded-xl overflow-hidden border border-neutral-200 hover:shadow-xl transition-shadow"
-          >
-            <div class="relative">
-              <div
-                class="w-full h-64 bg-[url('/concentrador_oxigeno.webp')] bg-cover bg-center"
-              ></div>
-
-              <div
-                class="absolute top-4 right-4 bg-neutral-900 text-white px-3 py-1 rounded-full text-xs"
-              >
-                Nuevo
-              </div>
-            </div>
-
-            <div class="p-6">
-              <h3 class="text-lg text-neutral-900 mb-2">
-                Concentrador de Oxígeno
-              </h3>
-
-              <p class="text-sm text-neutral-600 mb-4">
-                10 litros/min • Tecnología alemana
-              </p>
-
-              <div class="flex items-center justify-between">
-                <span class="text-xl text-neutral-900"> Consultar </span>
-
-                <button
-                  class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800"
-                >
-                  Ver Más
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Producto 2 -->
-          <div
-            class="bg-white rounded-xl overflow-hidden border border-neutral-200 hover:shadow-xl transition-shadow"
-          >
-            <div class="relative">
-              <div
-                class="w-full h-64 bg-[url('/AutoCPAP.webp')] bg-cover bg-center"
-              ></div>
-
-              <div
-                class="absolute top-4 right-4 bg-white text-neutral-900 px-3 py-1 rounded-full text-xs border border-neutral-300"
-              >
-                Popular
-              </div>
-            </div>
-
-            <div class="p-6">
-              <h3 class="text-lg text-neutral-900 mb-2">CPAP / Auto CPAP</h3>
-
-              <p class="text-sm text-neutral-600 mb-4">
-                Con humidificador • Datos WiFi
-              </p>
-
-              <div class="flex items-center justify-between">
-                <span class="text-xl text-neutral-900"> Consultar </span>
-
-                <button
-                  class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800"
-                >
-                  Ver Más
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Producto 3 -->
-          <div
-            class="bg-white rounded-xl overflow-hidden border border-neutral-200 hover:shadow-xl transition-shadow"
-          >
-            <div class="relative">
-              <div
-                class="w-full h-64 bg-[url('/cama-ortopedica.webp')] bg-cover bg-center"
-              ></div>
-            </div>
-
-            <div class="p-6">
-              <h3 class="text-lg text-neutral-900 mb-2">Cama Ortopédica</h3>
-
-              <p class="text-sm text-neutral-600 mb-4">
-                Eléctrica • 3 posiciones
-              </p>
-
-              <div class="flex items-center justify-between">
-                <span class="text-xl text-neutral-900"> Consultar </span>
-
-                <button
-                  class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800"
-                >
-                  Ver Más
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Producto 4 -->
-          <div
-            class="bg-white rounded-xl overflow-hidden border border-neutral-200 hover:shadow-xl transition-shadow"
-          >
-            <div class="relative">
-              <div
-                class="w-full h-64 bg-[url('/silla_ruedas.webp')] bg-cover bg-center"
-              ></div>
-            </div>
-
-            <div class="p-6">
-              <h3 class="text-lg text-neutral-900 mb-2">Silla de Ruedas</h3>
-
-              <p class="text-sm text-neutral-600 mb-4">
-                Plegable • Aluminio reforzado
-              </p>
-
-              <div class="flex items-center justify-between">
-                <span class="text-xl text-neutral-900"> Consultar </span>
-
-                <button
-                  class="px-4 py-2 bg-neutral-900 text-white rounded-lg text-sm hover:bg-neutral-800"
-                >
-                  Ver Más
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-12">
+            <i class="fa-brands fa-whatsapp"></i>
+            Solicitar equipamiento
+          </a>
           <button
-            class="px-8 py-4 border-2 border-neutral-900 text-neutral-900 rounded-lg hover:bg-neutral-900 hover:text-white transition-colors"
+            id="mobile-menu-toggle"
+            class="lg:hidden p-2 border border-edge rounded-md text-ink-muted"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Abrir menú"
           >
-            Ver Catálogo Completo
+            <i class="fa-solid fa-bars text-lg"></i>
           </button>
         </div>
       </div>
-    </section>
-    <section id="obras-sociales" class="w-full bg-white py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl text-neutral-900 mb-4">
-            Trabajamos con tu Obra Social
-          </h2>
-          <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Gestionamos directamente con más de 45 obras sociales y prepagas.
-            Facilitamos todos los trámites para que accedas rápidamente a tu
-            equipamiento.
-          </p>
+
+      <!-- Mobile menu -->
+      <nav id="mobile-menu" class="hidden lg:hidden border-t border-edge mt-4 pt-4 space-y-1 pb-2">
+        <a href="#servicios" class="block text-ink-muted py-2.5 px-2 rounded-md hover:bg-surface text-sm font-medium">Servicios</a>
+        <a href="#productos" class="block text-ink-muted py-2.5 px-2 rounded-md hover:bg-surface text-sm font-medium">Productos</a>
+        <a href="#institucional" class="block text-ink-muted py-2.5 px-2 rounded-md hover:bg-surface text-sm font-medium">Institucional</a>
+        <a href="#obras-sociales" class="block text-ink-muted py-2.5 px-2 rounded-md hover:bg-surface text-sm font-medium">Obras Sociales</a>
+        <a href="#contacto" class="block py-2.5 px-2 rounded-md hover:bg-surface text-sm font-medium">Contacto</a>
+        <div class="pt-3 pb-1">
+          <a
+            href="https://wa.me/5491112345678?text=Hola%20ETICA%2C%20quiero%20información%20sobre%20equipamiento%20médico."
+            class="flex items-center justify-center gap-2 w-full py-3 bg-brand text-white rounded-md text-sm font-medium"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            Solicitar equipamiento
+          </a>
         </div>
-        <div
-          class="bg-neutral-50 rounded-2xl p-8 lg:p-12 border border-neutral-200"
+      </nav>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="hero" class="relative overflow-hidden flex items-center">
+    <!-- Background image -->
+    <img
+      src="hero-new.png"
+      alt=""
+      class="absolute inset-0 w-full object-cover will-change-transform"
+      style="object-position: 68% center; height: 120%; top: -10%;"
+    />
+    <!-- Gradient overlay: bottom only for trust strip readability -->
+    <div
+      class="absolute inset-0"
+      style="background: linear-gradient(to top, rgba(11,31,46,0.55) 0%, transparent 35%);"
+    ></div>
+
+    <!-- Hero content -->
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 py-20 pb-32">
+      <div class="max-w-2xl space-y-7">
+
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 reveal">
+          <span class="inline-flex items-center gap-2 bg-navy/10 border border-navy/20 text-navy text-xs font-medium tracking-wider uppercase px-4 py-2 rounded-full">
+            <i class="fa-solid fa-shield-halved text-brand"></i>
+            Habilitados por ANMAT &nbsp;·&nbsp; ISO 9001 &nbsp;·&nbsp; +45 Obras Sociales
+          </span>
+        </div>
+
+        <!-- Heading -->
+        <h1
+          id="ic40j"
+          class="font-display text-navy leading-[1.05] reveal reveal-d1"
+          style="font-size: clamp(2.6rem, 5.5vw, 4.8rem);"
         >
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-            <div class="text-center">
-              <div
-                class="w-20 h-20 bg-neutral-900 rounded-full flex items-center justify-center mx-auto mb-4"
-              >
-                <i class="text-white text-2xl" data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-file-medical"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="file-medical"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 384 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM160 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H224v48c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V352H112c-8.8 0-16-7.2-16-16V304c0-8.8 7.2-16 16-16h48V240z"
-                    ></path>
-                  </svg>
-                </i>
-              </div>
-              <h3 class="text-lg text-neutral-900 mb-2">Gestión Completa</h3>
-              <p class="text-sm text-neutral-600">
-                Nos encargamos de toda la documentación y autorizaciones
-                necesarias
-              </p>
-            </div>
-            <div class="text-center">
-              <div
-                class="w-20 h-20 bg-neutral-900 rounded-full flex items-center justify-center mx-auto mb-4"
-              >
-                <i class="text-white text-2xl" data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-clock"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="clock"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
-                    ></path>
-                  </svg>
-                </i>
-              </div>
-              <h3 class="text-lg text-neutral-900 mb-2">Respuesta Rápida</h3>
-              <p class="text-sm text-neutral-600">
-                Procesamiento de órdenes en 24/48 horas hábiles
-              </p>
-            </div>
-            <div class="text-center">
-              <div
-                class="w-20 h-20 bg-neutral-900 rounded-full flex items-center justify-center mx-auto mb-4"
-              >
-                <i class="text-white text-2xl" data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-handshake"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="handshake"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM16 128c-8.8 0-16 7.2-16 16V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128H16zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V144c0-8.8-7.2-16-16-16H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"
-                    ></path>
-                  </svg>
-                </i>
-              </div>
-              <h3 class="text-lg text-neutral-900 mb-2">Asesoramiento</h3>
-              <p class="text-sm text-neutral-600">
-                Te ayudamos a entender tu cobertura y opciones disponibles
-              </p>
-            </div>
+          El equipamiento médico que necesita su familia,
+          <span class="text-brand font-display">hoy en su casa.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-ink-muted text-lg leading-relaxed max-w-xl reveal reveal-d2">
+          Alquiler y venta de alta complejidad con cobertura de obra social.
+          Gestionamos todos los trámites. Entrega en <strong class="text-navy font-semibold">24 horas en AMBA</strong>.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap gap-3 reveal reveal-d3">
+          <a
+            href="#contacto"
+            class="inline-flex items-center gap-2 px-7 py-3.5 bg-brand text-white rounded-md font-semibold text-sm hover:bg-brand-dark transition-colors"
+          >
+            Solicitar equipamiento
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <a
+            href="tel:08005553842"
+            class="inline-flex items-center gap-2 px-7 py-3.5 bg-navy/8 border border-navy/20 text-navy rounded-md font-medium text-sm hover:bg-navy/15 transition-colors"
+          >
+            <i class="fa-solid fa-phone text-brand"></i>
+            0800-555-ETICA
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust strip — bottom of hero -->
+    <div class="absolute bottom-0 left-0 right-0 z-10" style="background: rgba(255,255,255,0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid rgba(11,31,46,0.08);">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="flex items-center gap-2.5 text-ink">
+            <i class="fa-solid fa-certificate text-brand text-sm flex-shrink-0"></i>
+            <span class="text-xs font-medium">Habilitación ANMAT</span>
           </div>
-          <div class="bg-white rounded-xl p-8 border border-neutral-200">
-            <h4 class="text-xl text-neutral-900 mb-6 text-center">
-              Principales Obras Sociales
-            </h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-              <div class="text-center">
-                <div
-                  class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto mb-2"
-                >
-                  <img
-                    src="/osde-logo.webp"
-                    alt="OSDE"
-                    class="w-full h-full object-contain object-center"
-                  />
-                </div>
-                <p class="text-xs text-neutral-600">Plan 210, 310, 410</p>
-              </div>
-              <div class="text-center">
-                <div
-                  class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto mb-2"
-                >
-                  <img
-                    src="/swiss-medical-logo.webp"
-                    alt="Swiss Medical"
-                    class="w-full h-full object-contain object-center"
-                  />
-                </div>
-                <p class="text-xs text-neutral-600">Todos los planes</p>
-              </div>
-              <div class="text-center">
-                <div
-                  class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto mb-2"
-                >
-                  <img
-                    src="/galeno-logo.webp"
-                    alt="Galeno"
-                    class="w-full h-full object-contain object-center"
-                  />
-                </div>
-                <p class="text-xs text-neutral-600">Todos los planes</p>
-              </div>
-              <div class="text-center">
-                <div
-                  class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto mb-2"
-                >
-                  <img
-                    src="/medife-logo.webp"
-                    alt="Medifé"
-                    class="w-full h-full object-contain object-center"
-                  />
-                </div>
-                <p class="text-xs text-neutral-600">Todos los planes</p>
-              </div>
-              <div class="text-center">
-                <div
-                  class="w-24 h-12 sm:w-28 sm:h-14 rounded-lg flex items-center justify-center mx-auto mb-2"
-                >
-                  <img
-                    src="/pami-logo.webp"
-                    alt="PAMI"
-                    class="w-full h-full object-contain object-center"
-                  />
-                </div>
-                <p class="text-xs text-neutral-600">Cobertura total</p>
-              </div>
-            </div>
-            <div class="text-center mt-8">
-              <button class="text-neutral-700 hover:text-neutral-900">
-                Ver listado completo de obras sociales
-                <i class="ml-2" data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-arrow-right"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="arrow-right"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                    ></path>
-                  </svg>
-                </i>
-              </button>
-            </div>
+          <div class="flex items-center gap-2.5 text-ink">
+            <i class="fa-solid fa-award text-brand text-sm flex-shrink-0"></i>
+            <span class="text-xs font-medium">Certificación ISO 9001</span>
+          </div>
+          <div class="flex items-center gap-2.5 text-ink">
+            <i class="fa-solid fa-truck text-brand text-sm flex-shrink-0"></i>
+            <span class="text-xs font-medium">Entrega en 24 horas</span>
+          </div>
+          <div class="flex items-center gap-2.5 text-ink">
+            <i class="fa-solid fa-map-location-dot text-brand text-sm flex-shrink-0"></i>
+            <span class="text-xs font-medium">23 provincias cubiertas</span>
           </div>
         </div>
       </div>
-    </section>
-    <section id="proceso" class="w-full bg-neutral-900 text-white py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl mb-4">
-            Proceso Simple y Transparente
-          </h2>
-          <p class="text-lg text-white max-w-2xl mx-auto">
-            Desde tu consulta hasta la entrega del equipo, te acompañamos en
-            cada paso del proceso
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       METRICS
+  ══════════════════════════════════════════ -->
+  <section id="metrics" class="w-full bg-white border-b border-edge pattern-dots">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-edge">
+
+        <div class="text-center px-6 py-8 reveal">
+          <div class="metric-val text-5xl sm:text-6xl font-bold text-brand mb-2">15<span class="text-3xl">+</span></div>
+          <div class="text-sm font-semibold text-ink mb-1">Años de experiencia</div>
+          <div class="text-xs text-ink-muted">En equipamiento médico de alta complejidad</div>
+        </div>
+
+        <div class="text-center px-6 py-8 reveal reveal-d1">
+          <div class="metric-val text-5xl sm:text-6xl font-bold text-brand mb-2">12K<span class="text-3xl">+</span></div>
+          <div class="text-sm font-semibold text-ink mb-1">Pacientes asistidos</div>
+          <div class="text-xs text-ink-muted">Con resultados y seguimiento satisfactorio</div>
+        </div>
+
+        <div class="text-center px-6 py-8 reveal reveal-d2">
+          <div class="metric-val text-5xl sm:text-6xl font-bold text-brand mb-2">45<span class="text-3xl">+</span></div>
+          <div class="text-sm font-semibold text-ink mb-1">Obras sociales</div>
+          <div class="text-xs text-ink-muted">Convenios activos con las principales prepagas</div>
+        </div>
+
+        <div class="text-center px-6 py-8 reveal reveal-d3">
+          <div class="metric-val text-5xl sm:text-6xl font-bold text-brand mb-2">23</div>
+          <div class="text-sm font-semibold text-ink mb-1">Provincias cubiertas</div>
+          <div class="text-xs text-ink-muted">Cobertura y entrega directa en todo el país</div>
+        </div>
+
+      </div>
+
+      <!-- Obras sociales logos strip — carrusel -->
+      <div class="border-t border-edge mt-2 pt-10">
+        <p class="text-center text-xs font-semibold tracking-widest text-ink-muted uppercase mb-7">
+          Convenios activos con las principales obras sociales
+        </p>
+        <div class="marquee-fade-wrap marquee-wrap overflow-hidden max-w-3xl mx-auto">
+          <div class="marquee-track marquee-track-slow flex items-center gap-10 w-max">
+            <!-- Set 1 -->
+            <img src="osde-logo.webp"          alt="OSDE"          class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="swiss-medical-logo.webp" alt="Swiss Medical" class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="galeno-logo.webp"        alt="Galeno"        class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="medife-logo.webp"        alt="Medifé"        class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="ioma-logo.webp"          alt="IOMA"          class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="pami-logo.webp"          alt="PAMI"          class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <!-- Set 2 -->
+            <img src="osde-logo.webp"          alt="OSDE"          class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="swiss-medical-logo.webp" alt="Swiss Medical" class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="galeno-logo.webp"        alt="Galeno"        class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="medife-logo.webp"        alt="Medifé"        class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="ioma-logo.webp"          alt="IOMA"          class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+            <img src="pami-logo.webp"          alt="PAMI"          class="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       INSTITUCIONAL / ABOUT
+  ══════════════════════════════════════════ -->
+  <section id="institucional" class="w-full bg-surface py-24 pattern-grid">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Text column -->
+        <div class="space-y-7 reveal">
+          <div>
+            <span class="inline-block text-xs font-semibold tracking-widest text-brand uppercase mb-4">
+              Quiénes somos
+            </span>
+            <h2 class="font-display text-4xl sm:text-5xl text-ink leading-tight">
+              Más que proveedores,<br/>
+              somos aliados<br/>
+              en salud.
+            </h2>
+          </div>
+
+          <p class="text-ink-muted leading-relaxed text-lg">
+            Durante más de 15 años, ETICA ha sido el socio de confianza de instituciones médicas,
+            profesionales de la salud y familias en todo el país. Nuestra misión es garantizar
+            acceso a tecnología médica de vanguardia con el respaldo de un equipo altamente capacitado.
           </p>
+
+          <p class="text-ink-muted leading-relaxed">
+            Cada equipo que entregamos cumple con los más altos estándares de calidad y seguridad.
+            Trabajamos bajo estrictas normativas de ANMAT y mantenemos certificaciones internacionales
+            que avalan nuestro compromiso con la excelencia.
+          </p>
+
+          <!-- Credential cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="bg-white rounded-xl p-5 border border-edge">
+              <div class="w-10 h-10 bg-brand-light rounded-lg flex items-center justify-center mb-3">
+                <i class="fa-solid fa-certificate text-brand"></i>
+              </div>
+              <h3 class="font-semibold text-ink mb-1">Certificaciones</h3>
+              <p class="text-sm text-ink-muted leading-relaxed">
+                Habilitación ANMAT, ISO 9001 y certificaciones de fabricantes internacionales.
+              </p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-edge">
+              <div class="w-10 h-10 bg-brand-light rounded-lg flex items-center justify-center mb-3">
+                <i class="fa-solid fa-user-doctor text-brand"></i>
+              </div>
+              <h3 class="font-semibold text-ink mb-1">Equipo experto</h3>
+              <p class="text-sm text-ink-muted leading-relaxed">
+                Biomédicos certificados y técnicos especializados con formación continua.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="text-center">
-            <div
-              class="w-20 h-20 bg-white text-neutral-900 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
-            >
-              1
-            </div>
-            <h3 class="text-xl mb-3">Consulta Inicial</h3>
-            <p class="text-white">
-              Contactanos por teléfono, web o visitanos. Analizamos tu necesidad
-              y te asesoramos sobre la mejor opción.
-            </p>
+
+        <!-- Image column -->
+        <div class="relative reveal reveal-d1">
+          <div class="rounded-2xl overflow-hidden">
+            <img
+              src="frente_etika.webp"
+              alt="Instalaciones ETICA Equipamiento Médico"
+              class="w-full h-[520px] object-cover object-center"
+            />
           </div>
-          <div class="text-center">
-            <div
-              class="w-20 h-20 bg-white text-neutral-900 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
-            >
-              2
+          <!-- Floating badge -->
+          <div class="absolute -bottom-5 -left-5 sm:bottom-8 sm:left-8 bg-white rounded-xl shadow-lg px-5 py-4 border border-edge">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 bg-brand rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-shield-halved text-white"></i>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm">Garantía total</p>
+                <p class="text-xs text-ink-muted">En cada equipo y servicio</p>
+              </div>
             </div>
-            <h3 class="text-xl mb-3">Cotización</h3>
-            <p class="text-white">
-              Recibís una cotización detallada con todas las opciones,
-              coberturas y planes de pago disponibles.
-            </p>
           </div>
-          <div class="text-center">
-            <div
-              class="w-20 h-20 bg-white text-neutral-900 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
-            >
-              3
+          <!-- Year badge -->
+          <div class="absolute top-6 right-6 bg-navy text-white rounded-xl px-5 py-3 text-center">
+            <div class="font-display text-3xl font-bold leading-none">15</div>
+            <div class="text-xs text-white/70 mt-0.5 tracking-wide">años</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICIOS
+  ══════════════════════════════════════════ -->
+  <section id="servicios" class="w-full bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16 reveal">
+        <div>
+          <span class="inline-block text-xs font-semibold tracking-widest text-brand uppercase mb-4">Nuestros servicios</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-ink max-w-md">
+            Soluciones claras para cada situación
+          </h2>
+        </div>
+        <p class="text-ink-muted leading-relaxed max-w-sm lg:text-right text-sm">
+          Acompañamos a pacientes, familias e instituciones con opciones simples, ágiles y con cobertura de obra social.
+        </p>
+      </div>
+
+      <!-- Rows -->
+      <div class="divide-y divide-edge">
+
+        <!-- 01 — Alquiler -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center py-16 reveal">
+          <div class="space-y-6 order-2 lg:order-1">
+            <div class="flex items-center gap-5">
+              <span class="font-display leading-none select-none" style="font-size:5.5rem; color: #EEF4FA;">01</span>
+              <span class="inline-flex items-center px-3 py-1.5 rounded-full bg-brand-light text-brand text-xs font-semibold tracking-widest uppercase">Alquiler</span>
             </div>
-            <h3 class="text-xl mb-3">Gestión</h3>
-            <p class="text-white">
-              Gestionamos autorizaciones, documentación y coordinamos con tu
-              obra social o prepaga.
+            <h3 class="text-2xl font-bold text-ink">Alquiler de equipamiento</h3>
+            <p class="text-ink-muted leading-relaxed">
+              Ideal para recuperación post-operatoria, acompañamiento diario o necesidades temporales. Entrega rápida con instalación incluida.
             </p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Entrega en 24 horas en AMBA
+              </li>
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Instalación y capacitación sin cargo
+              </li>
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Retiro incluido al finalizar
+              </li>
+            </ul>
+            <a href="#contacto" class="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:text-brand-dark transition-colors service-cta">
+              Consultar disponibilidad <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
           </div>
-          <div class="text-center">
-            <div
-              class="w-20 h-20 bg-white text-neutral-900 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
-            >
-              4
+          <div class="order-1 lg:order-2 service-img-wrap rounded-2xl overflow-hidden h-80 lg:h-[420px]">
+            <img src="servicio_alquiler.webp" alt="Servicio de alquiler de equipamiento médico" class="service-img w-full h-full object-cover object-center" />
+          </div>
+        </div>
+
+        <!-- 02 — Venta -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center py-16 reveal">
+          <div class="service-img-wrap rounded-2xl overflow-hidden h-80 lg:h-[420px]">
+            <img src="servicio_venta.webp" alt="Servicio de venta de equipamiento médico" class="service-img w-full h-full object-cover object-center" />
+          </div>
+          <div class="space-y-6">
+            <div class="flex items-center gap-5">
+              <span class="font-display leading-none select-none" style="font-size:5.5rem; color: #EEF4FA;">02</span>
+              <span class="inline-flex items-center px-3 py-1.5 rounded-full bg-navy/8 text-navy text-xs font-semibold tracking-widest uppercase">Venta</span>
             </div>
-            <h3 class="text-xl mb-3">Entrega</h3>
-            <p class="text-white">
-              Instalamos, configuramos y capacitamos para el uso correcto del
-              equipamiento médico.
+            <h3 class="text-2xl font-bold text-ink">Venta de equipamiento</h3>
+            <p class="text-ink-muted leading-relaxed">
+              Equipos nuevos y certificados de las mejores marcas internacionales para el hogar o instituciones médicas.
             </p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Marcas certificadas con garantía del fabricante
+              </li>
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Asesoramiento personalizado para elegir el equipo correcto
+              </li>
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Financiación disponible en cuotas
+              </li>
+            </ul>
+            <a href="#contacto" class="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:text-brand-dark transition-colors service-cta">
+              Consultar disponibilidad <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
           </div>
+        </div>
+
+        <!-- 03 — Urgencias -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center py-16 reveal">
+          <div class="space-y-6 order-2 lg:order-1">
+            <div class="flex items-center gap-5">
+              <span class="font-display leading-none select-none" style="font-size:5.5rem; color: #EEF4FA;">03</span>
+              <span class="inline-flex items-center px-3 py-1.5 rounded-full bg-red-50 text-red-600 text-xs font-semibold tracking-widest uppercase">Urgencias</span>
+            </div>
+            <h3 class="text-2xl font-bold text-ink">Respuesta rápida para urgencias</h3>
+            <p class="text-ink-muted leading-relaxed">
+              Si lo necesita hoy, coordinamos la entrega en el menor tiempo posible. Porque hay situaciones que no pueden esperar.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Atención inmediata por WhatsApp o teléfono
+              </li>
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Coordinación express de entrega
+              </li>
+              <li class="flex items-center gap-3 text-sm text-ink-muted">
+                <span class="w-5 h-5 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-brand" style="font-size:9px;"></i>
+                </span>
+                Cobertura de obra social gestionada en el momento
+              </li>
+            </ul>
+            <a href="https://wa.me/5491112345678?text=URGENTE%3A%20necesito%20equipamiento%20médico." class="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:text-brand-dark transition-colors service-cta">
+              Contactar ahora <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+          <div class="order-1 lg:order-2 service-img-wrap rounded-2xl overflow-hidden h-80 lg:h-[420px]">
+            <img src="servicio_urgencias.webp" alt="Servicio de urgencias de equipamiento médico" class="service-img w-full h-full object-cover object-center" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PRODUCTOS
+  ══════════════════════════════════════════ -->
+  <section id="productos" class="w-full bg-surface py-24 pattern-dots">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4 reveal">
+        <div>
+          <span class="inline-block text-xs font-semibold tracking-widest text-brand uppercase mb-4">Catálogo</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-ink mb-2">Productos destacados</h2>
+          <p class="text-ink-muted">Equipamiento médico certificado de las mejores marcas</p>
+        </div>
+        <a href="#contacto" class="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-dark transition-colors flex-shrink-0">
+          Ver catálogo completo <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Producto 1 -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-edge reveal">
+          <div class="relative overflow-hidden h-56">
+            <img
+              src="concentrador_oxigeno.webp"
+              alt="Concentrador de Oxígeno 10 litros por minuto"
+              class="product-img w-full h-full object-cover object-center"
+            />
+            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-semibold px-3 py-1 rounded-full">
+              Disponible
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-ink mb-1">Concentrador de Oxígeno</h3>
+            <p class="text-xs text-ink-muted mb-4">10 litros/min · Tecnología alemana</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-ink-muted">Alquiler / Venta</span>
+              <a href="#contacto" class="inline-flex items-center gap-1 text-xs font-semibold text-brand hover:text-brand-dark transition-colors">
+                Consultar precio <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-edge reveal reveal-d1">
+          <div class="relative overflow-hidden h-56">
+            <img
+              src="AutoCPAP.webp"
+              alt="CPAP y Auto CPAP con humidificador"
+              class="product-img w-full h-full object-cover object-center"
+            />
+            <span class="absolute top-3 right-3 bg-white text-ink text-xs font-semibold px-3 py-1 rounded-full border border-edge">
+              Popular
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-ink mb-1">CPAP / Auto CPAP</h3>
+            <p class="text-xs text-ink-muted mb-4">Con humidificador · Conectividad WiFi</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-ink-muted">Alquiler / Venta</span>
+              <a href="#contacto" class="inline-flex items-center gap-1 text-xs font-semibold text-brand hover:text-brand-dark transition-colors">
+                Consultar precio <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-edge reveal reveal-d2">
+          <div class="relative overflow-hidden h-56">
+            <img
+              src="cama-ortopedica.webp"
+              alt="Cama ortopédica eléctrica 3 posiciones"
+              class="product-img w-full h-full object-cover object-center"
+            />
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-ink mb-1">Cama Ortopédica</h3>
+            <p class="text-xs text-ink-muted mb-4">Eléctrica · 3 posiciones regulables</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-ink-muted">Alquiler / Venta</span>
+              <a href="#contacto" class="inline-flex items-center gap-1 text-xs font-semibold text-brand hover:text-brand-dark transition-colors">
+                Consultar precio <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-edge reveal reveal-d3">
+          <div class="relative overflow-hidden h-56">
+            <img
+              src="silla_ruedas.webp"
+              alt="Silla de ruedas plegable de aluminio reforzado"
+              class="product-img w-full h-full object-cover object-center"
+            />
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-ink mb-1">Silla de Ruedas</h3>
+            <p class="text-xs text-ink-muted mb-4">Plegable · Aluminio reforzado</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-ink-muted">Alquiler / Venta</span>
+              <a href="#contacto" class="inline-flex items-center gap-1 text-xs font-semibold text-brand hover:text-brand-dark transition-colors">
+                Consultar precio <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       OBRAS SOCIALES
+  ══════════════════════════════════════════ -->
+  <section id="obras-sociales" class="w-full bg-white py-24 pattern-grid">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Split: header izq + items der -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start mb-14">
+
+        <!-- Izquierda: heading + subtítulo + CTA -->
+        <div class="reveal">
+          <span class="inline-block text-xs font-semibold tracking-widest text-brand uppercase mb-5">Cobertura</span>
+          <h2 class="font-display text-4xl sm:text-5xl text-ink leading-tight mb-6">
+            Trabajamos con su obra social
+          </h2>
+          <p class="text-ink-muted text-lg leading-relaxed mb-8">
+            Nos encargamos de toda la gestión. Usted solo avisa que necesita el equipo — nosotros hacemos el resto.
+          </p>
+          <a href="#contacto" class="inline-flex items-center gap-2 px-6 py-3 bg-brand text-white rounded-md font-semibold text-sm hover:bg-brand-dark transition-colors">
+            Verificar mi cobertura
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Derecha: 3 items con divisores -->
+        <div class="divide-y divide-edge reveal reveal-d1">
+
+          <div class="flex items-start gap-6 pb-8">
+            <span class="font-display text-5xl leading-none flex-shrink-0 mt-1" style="color: #D4E2EF;">01</span>
+            <div>
+              <h3 class="font-bold text-ink mb-2">Sin papelerío</h3>
+              <p class="text-sm text-ink-muted leading-relaxed">
+                Nos ocupamos de toda la documentación y autorizaciones necesarias. Usted solo nos dice qué necesita.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6 py-8">
+            <span class="font-display text-5xl leading-none flex-shrink-0 mt-1" style="color: #D4E2EF;">02</span>
+            <div>
+              <h3 class="font-bold text-ink mb-2">Entrega en 24–48 horas</h3>
+              <p class="text-sm text-ink-muted leading-relaxed">
+                Una vez autorizado, el equipo está en su casa al día siguiente hábil. Sin demoras innecesarias.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6 pt-8">
+            <span class="font-display text-5xl leading-none flex-shrink-0 mt-1" style="color: #D4E2EF;">03</span>
+            <div>
+              <h3 class="font-bold text-ink mb-2">Le explicamos su cobertura</h3>
+              <p class="text-sm text-ink-muted leading-relaxed">
+                Antes de cualquier trámite, le decimos exactamente qué cubre su plan y cuánto abona usted.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
-    <section id="contacto" class="w-full bg-white py-20">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div class="space-y-8">
-            <div>
-              <h2 class="text-3xl sm:text-4xl text-neutral-900 mb-4">
-                ¿Cómo podemos ayudarlo hoy?
-              </h2>
-              <p class="text-lg text-neutral-600 leading-relaxed">
-                Nuestro equipo está disponible para responder todas sus
-                consultas. Ya sea que necesite equipamiento para su hogar,
-                institución o información sobre coberturas, estamos aquí para
-                asistirlo.
-              </p>
+
+      <!-- Logos marquee -->
+      <div class="marquee-wrap overflow-hidden py-4">
+        <div class="marquee-track flex items-center gap-16 w-max">
+          <!-- Set 1 -->
+          <img src="osde-logo.webp"          alt="OSDE"          class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="swiss-medical-logo.webp" alt="Swiss Medical" class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="galeno-logo.webp"        alt="Galeno"        class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="medife-logo.webp"        alt="Medifé"        class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="ioma-logo.webp"          alt="IOMA"          class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="pami-logo.webp"          alt="PAMI"          class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <!-- Set 2 (duplicado para loop continuo) -->
+          <img src="osde-logo.webp"          alt="OSDE"          class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="swiss-medical-logo.webp" alt="Swiss Medical" class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="galeno-logo.webp"        alt="Galeno"        class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="medife-logo.webp"        alt="Medifé"        class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="ioma-logo.webp"          alt="IOMA"          class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+          <img src="pami-logo.webp"          alt="PAMI"          class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROCESO
+  ══════════════════════════════════════════ -->
+  <section id="proceso" class="text-white py-24">
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="text-center mb-14 reveal">
+        <span class="inline-block text-xs font-semibold tracking-widest text-accent uppercase mb-4">Cómo funciona</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Proceso simple y transparente</h2>
+        <p class="text-white/60 text-lg max-w-xl mx-auto">
+          Desde su consulta hasta la entrega del equipo, lo acompañamos en cada paso.
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <!-- Paso 01 -->
+        <div class="process-card rounded-2xl reveal">
+          <div class="process-bg-number">01</div>
+          <div class="relative z-10 p-7">
+            <div class="process-accent-line mb-6"></div>
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-5"
+                 style="background: rgba(0,168,204,0.12); border: 1px solid rgba(0,168,204,0.22);">
+              <i class="fa-solid fa-headset text-accent"></i>
             </div>
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div
-                  class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
-                >
-                  <i class="text-neutral-900 text-xl" data-fa-i2svg="">
-                    <svg
-                      class="svg-inline--fa fa-phone"
-                      aria-hidden="true"
-                      focusable="false"
-                      data-prefix="fas"
-                      data-icon="phone"
-                      role="img"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                      data-fa-i2svg=""
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-                      ></path>
-                    </svg>
-                  </i>
-                </div>
-                <div>
-                  <h3 class="text-neutral-900 mb-1">Línea Principal</h3>
-                  <p class="text-neutral-600 mb-1">0800-555-ETICA (38422)</p>
-                  <p class="text-sm text-neutral-500">
-                    Lunes a Viernes 8:00 - 20:00 hs
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div
-                  class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
-                >
-                  <i class="text-neutral-900 text-xl" data-fa-i2svg="">
-                    <svg
-                      class="svg-inline--fa fa-envelope"
-                      aria-hidden="true"
-                      focusable="false"
-                      data-prefix="fas"
-                      data-icon="envelope"
-                      role="img"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                      data-fa-i2svg=""
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-                      ></path>
-                    </svg>
-                  </i>
-                </div>
-                <div>
-                  <h3 class="text-neutral-900 mb-1">Correo Electrónico</h3>
-                  <p class="text-neutral-600 mb-1">info@eticamedica.com.ar</p>
-                  <p class="text-sm text-neutral-500">
-                    Respuesta en 24 horas hábiles
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div
-                  class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
-                >
-                  <i class="text-neutral-900 text-xl" data-fa-i2svg="">
-                    <svg
-                      class="svg-inline--fa fa-location-dot"
-                      aria-hidden="true"
-                      focusable="false"
-                      data-prefix="fas"
-                      data-icon="location-dot"
-                      role="img"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 384 512"
-                      data-fa-i2svg=""
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
-                      ></path>
-                    </svg>
-                  </i>
-                </div>
-                <div>
-                  <h3 class="text-neutral-900 mb-1">Oficina Central</h3>
-                  <p class="text-neutral-600 mb-1">Av. Corrientes 1234, CABA</p>
-                  <p class="text-sm text-neutral-500">
-                    Buenos Aires, Argentina (C1043AAZ)
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div
-                  class="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
-                >
-                  <i class="text-neutral-900 text-xl" data-fa-i2svg="">
-                    <svg
-                      class="svg-inline--fa fa-clock"
-                      aria-hidden="true"
-                      focusable="false"
-                      data-prefix="fas"
-                      data-icon="clock"
-                      role="img"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                      data-fa-i2svg=""
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
-                      ></path>
-                    </svg>
-                  </i>
-                </div>
-                <div>
-                  <h3 class="text-neutral-900 mb-1">Horarios de Atención</h3>
-                  <p class="text-neutral-600 mb-1">
-                    Lunes a Viernes: 8:00 - 20:00 hs
-                  </p>
-                  <p class="text-sm text-neutral-500">
-                    Sábados: 9:00 - 13:00 hs
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="bg-neutral-900 rounded-xl p-6 text-white">
-              <div class="flex items-center mb-3">
-                <i class="text-2xl mr-3" data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-phone-volume"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="phone-volume"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"
-                    ></path>
-                  </svg>
-                </i>
-                <h3 class="text-xl">Urgencias 24/7</h3>
-              </div>
-              <p class="text-neutral-300 mb-4">
-                Para emergencias fuera del horario comercial
-              </p>
-              <p class="text-2xl">0800-URGENCIA</p>
+            <span class="text-xs font-semibold tracking-widest text-accent uppercase">Paso 01</span>
+            <h3 class="font-bold text-white text-lg mt-1.5 mb-2.5">Consulta inicial</h3>
+            <p class="text-white/55 text-sm leading-relaxed mb-6">
+              Contáctenos por teléfono, WhatsApp o formulario. Analizamos su necesidad y lo asesoramos sin compromiso.
+            </p>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-regular fa-clock text-accent/60 text-xs"></i>
+              <span class="text-xs text-white/35 font-medium">Mismo día</span>
             </div>
           </div>
-          <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-200">
-            <h3 class="text-2xl text-neutral-900 mb-6">Envíenos su consulta</h3>
-            <form class="space-y-6">
+        </div>
+
+        <!-- Paso 02 -->
+        <div class="process-card rounded-2xl reveal reveal-d1">
+          <div class="process-bg-number">02</div>
+          <div class="relative z-10 p-7">
+            <div class="process-accent-line mb-6"></div>
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-5"
+                 style="background: rgba(0,168,204,0.12); border: 1px solid rgba(0,168,204,0.22);">
+              <i class="fa-solid fa-file-invoice text-accent"></i>
+            </div>
+            <span class="text-xs font-semibold tracking-widest text-accent uppercase">Paso 02</span>
+            <h3 class="font-bold text-white text-lg mt-1.5 mb-2.5">Cotización</h3>
+            <p class="text-white/55 text-sm leading-relaxed mb-6">
+              Recibe una propuesta detallada con todas las opciones, coberturas y planes de pago disponibles.
+            </p>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-regular fa-clock text-accent/60 text-xs"></i>
+              <span class="text-xs text-white/35 font-medium">24 horas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paso 03 -->
+        <div class="process-card rounded-2xl reveal reveal-d2">
+          <div class="process-bg-number">03</div>
+          <div class="relative z-10 p-7">
+            <div class="process-accent-line mb-6"></div>
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-5"
+                 style="background: rgba(0,168,204,0.12); border: 1px solid rgba(0,168,204,0.22);">
+              <i class="fa-solid fa-handshake text-accent"></i>
+            </div>
+            <span class="text-xs font-semibold tracking-widest text-accent uppercase">Paso 03</span>
+            <h3 class="font-bold text-white text-lg mt-1.5 mb-2.5">Gestión</h3>
+            <p class="text-white/55 text-sm leading-relaxed mb-6">
+              Gestionamos autorizaciones y toda la documentación con su obra social o prepaga.
+            </p>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-regular fa-clock text-accent/60 text-xs"></i>
+              <span class="text-xs text-white/35 font-medium">24–48 horas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paso 04 — último: borde accent más visible -->
+        <div class="process-card rounded-2xl reveal reveal-d3"
+             style="border-color: rgba(0,168,204,0.22) !important;">
+          <div class="process-bg-number" style="color: rgba(0,168,204,0.06);">04</div>
+          <div class="relative z-10 p-7">
+            <div class="process-accent-line mb-6"></div>
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-5"
+                 style="background: rgba(0,168,204,0.18); border: 1px solid rgba(0,168,204,0.30);">
+              <i class="fa-solid fa-truck-medical text-accent"></i>
+            </div>
+            <span class="text-xs font-semibold tracking-widest text-accent uppercase">Paso 04</span>
+            <h3 class="font-bold text-white text-lg mt-1.5 mb-2.5">Entrega</h3>
+            <p class="text-white/55 text-sm leading-relaxed mb-6">
+              Instalamos, configuramos y capacitamos para el uso correcto del equipo en su domicilio.
+            </p>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-regular fa-clock text-accent/60 text-xs"></i>
+              <span class="text-xs text-white/35 font-medium">Día pactado</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center text-white/35 text-sm mt-10 reveal">
+        ¿Dudas sobre el proceso?
+        <a href="tel:08005553842" class="text-accent hover:text-white/90 transition-colors font-medium ml-1">Llámenos al 0800-555-ETICA</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════════════ -->
+  <section id="testimonios" class="w-full bg-surface py-24 pattern-grid">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-14 reveal">
+        <span class="inline-block text-xs font-semibold tracking-widest text-brand uppercase mb-4">Testimonios</span>
+        <h2 class="font-display text-3xl sm:text-4xl text-ink mb-4">
+          Lo que dicen nuestros pacientes
+        </h2>
+        <p class="text-ink-muted max-w-xl mx-auto">
+          Más de 12.000 familias confiaron en ETICA para el cuidado de sus seres queridos.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card bg-white rounded-2xl p-7 border border-edge reveal">
+          <div class="flex items-center gap-1 mb-4">
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+          </div>
+          <p class="text-ink-muted text-sm leading-relaxed mb-6">
+            "Llamé un martes por la tarde y al miércoles a la mañana ya tenía el concentrador de oxígeno instalado en casa de mi papá. La atención fue impecable, nos explicaron todo con paciencia."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-brand-light rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-brand font-bold text-sm">MG</span>
+            </div>
+            <div>
+              <p class="font-semibold text-ink text-sm">María González</p>
+              <p class="text-xs text-ink-muted">Buenos Aires · Concentrador de Oxígeno</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card bg-white rounded-2xl p-7 border border-edge reveal reveal-d1">
+          <div class="flex items-center gap-1 mb-4">
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+          </div>
+          <p class="text-ink-muted text-sm leading-relaxed mb-6">
+            "Mi obra social cubre el alquiler del CPAP y ETICA gestionó todo. Ni me enteré del trámite. En tres días tenía el equipo y una sesión de capacitación de uso. Excelente servicio."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-brand-light rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-brand font-bold text-sm">RF</span>
+            </div>
+            <div>
+              <p class="font-semibold text-ink text-sm">Roberto Fernández</p>
+              <p class="text-xs text-ink-muted">Córdoba · CPAP Auto con humidificador</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonial-card bg-white rounded-2xl p-7 border border-edge reveal reveal-d2">
+          <div class="flex items-center gap-1 mb-4">
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+          </div>
+          <p class="text-ink-muted text-sm leading-relaxed mb-6">
+            "Le dieron el alta a mi mamá y en el hospital me recomendaron ETICA. Alquilamos la cama ortopédica y la silla de ruedas. Llegaron puntuales, los chicos instalaron todo y nos enseñaron a usarla."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-brand-light rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-brand font-bold text-sm">AM</span>
+            </div>
+            <div>
+              <p class="font-semibold text-ink text-sm">Ana Martínez</p>
+              <p class="text-xs text-ink-muted">Rosario · Cama ortopédica + Silla de ruedas</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════════ -->
+  <section id="contacto" class="w-full bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+        <!-- Left: info + whatsapp -->
+        <div class="space-y-8 reveal">
+          <div>
+            <span class="inline-block text-xs font-semibold tracking-widest text-brand uppercase mb-4">Contacto</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-ink mb-4">
+              Necesita equipamiento médico.<br/>
+              Nosotros lo resolvemos.
+            </h2>
+            <p class="text-ink-muted text-lg leading-relaxed">
+              Nuestro equipo está disponible para responder todas sus consultas.
+              Respondemos en menos de 2 horas en horario comercial.
+            </p>
+          </div>
+
+          <!-- WhatsApp CTA - prominente -->
+          <a
+            href="https://wa.me/5491112345678?text=Hola%20ETICA%2C%20quiero%20información%20sobre%20equipamiento%20médico."
+            class="flex items-center gap-4 p-5 bg-[#25D366]/10 border border-[#25D366]/30 rounded-xl hover:bg-[#25D366]/15 transition-colors group"
+          >
+            <div class="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+            </div>
+            <div>
+              <p class="font-bold text-ink">Escribir por WhatsApp</p>
+              <p class="text-sm text-ink-muted">La forma más rápida · Respuesta inmediata</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-brand ml-auto group-hover:translate-x-1 transition-transform"></i>
+          </a>
+
+          <!-- Datos de contacto -->
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-surface rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="fa-solid fa-phone text-brand text-sm"></i>
+              </div>
               <div>
-                <label class="block text-sm text-neutral-700 mb-2">
-                  Nombre Completo *
-                </label>
+                <p class="font-semibold text-ink text-sm mb-0.5">Línea principal</p>
+                <p class="text-ink-muted text-sm">0800-555-ETICA (38422)</p>
+                <p class="text-xs text-ink-muted mt-0.5">Lunes a Viernes 8:00 – 20:00 hs · Sábados 9:00 – 13:00 hs</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-surface rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="fa-solid fa-envelope text-brand text-sm"></i>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm mb-0.5">Correo electrónico</p>
+                <p class="text-ink-muted text-sm">info@eticamedica.com.ar</p>
+                <p class="text-xs text-ink-muted mt-0.5">Respuesta en 24 horas hábiles</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-surface rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="fa-solid fa-location-dot text-brand text-sm"></i>
+              </div>
+              <div>
+                <p class="font-semibold text-ink text-sm mb-0.5">Oficina central</p>
+                <p class="text-ink-muted text-sm">Av. Corrientes 1234, CABA</p>
+                <p class="text-xs text-ink-muted mt-0.5">Buenos Aires, Argentina (C1043AAZ)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="bg-surface rounded-2xl p-8 border border-edge reveal reveal-d1">
+          <h3 class="text-xl font-bold text-ink mb-1">Envíenos su consulta</h3>
+          <p class="text-sm text-ink-muted mb-7">Completá el formulario y lo contactamos a la brevedad.</p>
+
+          <form class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium text-ink mb-1.5">Nombre completo *</label>
+              <input
+                type="text"
+                placeholder="Juan Pérez"
+                class="w-full px-4 py-3 border border-edge bg-white rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-ink mb-1.5">Teléfono *</label>
                 <input
-                  type="text"
-                  placeholder="Juan Pérez"
-                  class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900"
+                  type="tel"
+                  placeholder="11 1234-5678"
+                  class="w-full px-4 py-3 border border-edge bg-white rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
                 />
               </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-sm text-neutral-700 mb-2">
-                    Teléfono *
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="11 1234-5678"
-                    class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm text-neutral-700 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="juan@email.com"
-                    class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900"
-                  />
-                </div>
-              </div>
               <div>
-                <label class="block text-sm text-neutral-700 mb-2">
-                  Servicio Requerido *
-                </label>
-                <select
-                  class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900"
-                >
-                  <option>Seleccione una opción</option>
-                  <option>Alquiler de Equipos</option>
-                  <option>Compra de Equipos</option>
-                  <option>Entrega y Retiro</option>
-                  <option>Atención Domiciliaria</option>
-                  <option>Consulta sobre Obra Social</option>
-                  <option>Otro</option>
-                </select>
+                <label class="block text-sm font-medium text-ink mb-1.5">Email</label>
+                <input
+                  type="email"
+                  placeholder="juan@email.com"
+                  class="w-full px-4 py-3 border border-edge bg-white rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
+                />
               </div>
-              <div>
-                <label class="block text-sm text-neutral-700 mb-2">
-                  Mensaje *
-                </label>
-                <textarea
-                  rows="5"
-                  placeholder="Cuéntenos cómo podemos ayudarlo..."
-                  class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900"
-                >
-                </textarea>
-              </div>
-              <div class="flex items-start">
-                <input type="checkbox" id="privacy" class="mt-1 mr-3" />
-                <label for="privacy" class="text-sm text-neutral-600">
-                  Acepto la
-                  <a
-                    href="#politica-privacidad"
-                    class="text-neutral-900 underline"
-                  >
-                    política de privacidad
-                  </a>
-                  y autorizo el tratamiento de mis datos personales
-                </label>
-              </div>
-              <button
-                type="submit"
-                class="w-full px-8 py-4 bg-neutral-900 text-white rounded-lg hover:bg-neutral-800 transition-colors"
-              >
-                Enviar Consulta
-              </button>
-            </form>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-ink mb-1.5">¿Qué necesita? *</label>
+              <select class="w-full px-4 py-3 border border-edge bg-white rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors text-ink-muted">
+                <option value="">Seleccione una opción</option>
+                <option>Alquiler de equipamiento</option>
+                <option>Compra de equipamiento</option>
+                <option>Consulta sobre obra social</option>
+                <option>Urgencia — necesito el equipo hoy</option>
+                <option>Información general</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-ink mb-1.5">Mensaje</label>
+              <textarea
+                rows="4"
+                placeholder="Cuéntenos cómo podemos ayudarlo..."
+                class="w-full px-4 py-3 border border-edge bg-white rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors resize-none"
+              ></textarea>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <input type="checkbox" id="privacy" class="mt-0.5 accent-brand" />
+              <label for="privacy" class="text-xs text-ink-muted leading-relaxed">
+                Acepto la <a href="#" class="text-brand underline hover:text-brand-dark">política de privacidad</a>
+                y autorizo el uso de mis datos para ser contactado.
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-3.5 bg-brand text-white rounded-lg font-semibold text-sm hover:bg-brand-dark transition-colors"
+            >
+              Enviar consulta
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════════ -->
+  <section id="faq" class="w-full bg-surface py-24">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12 reveal">
+        <span class="inline-block text-xs font-semibold tracking-widest text-brand uppercase mb-4">Preguntas frecuentes</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-ink mb-4">Resolvemos sus dudas</h2>
+        <p class="text-ink-muted max-w-xl mx-auto">
+          Las preguntas más comunes de nuestros pacientes y sus familias.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+
+        <!-- FAQ item 1 -->
+        <div class="faq-item bg-white rounded-xl border border-edge overflow-hidden reveal">
+          <button class="w-full px-7 py-5 flex items-center justify-between text-left hover:bg-surface transition-colors">
+            <span class="font-semibold text-ink pr-4">¿Cuánto tiempo demora la entrega del equipo?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron text-ink-muted text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-7 pb-5 text-sm text-ink-muted leading-relaxed">
+              En Capital Federal y Gran Buenos Aires la entrega se realiza en 24 horas hábiles.
+              Para el interior del país, el tiempo es de 48 a 72 horas según la localidad.
+              En casos urgentes contamos con servicio express — contáctenos directamente por WhatsApp.
+            </p>
           </div>
         </div>
+
+        <!-- FAQ item 2 -->
+        <div class="faq-item bg-white rounded-xl border border-edge overflow-hidden reveal">
+          <button class="w-full px-7 py-5 flex items-center justify-between text-left hover:bg-surface transition-colors">
+            <span class="font-semibold text-ink pr-4">¿Qué documentación necesito para alquilar un equipo?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron text-ink-muted text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-7 pb-5 text-sm text-ink-muted leading-relaxed">
+              En general se requiere prescripción médica, DNI del paciente y credencial de obra social (si aplica).
+              Nuestro equipo lo guía en cada caso y se encarga de gestionar las autorizaciones necesarias.
+              Para compras privadas, solo se necesita el DNI y la forma de pago.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ item 3 -->
+        <div class="faq-item bg-white rounded-xl border border-edge overflow-hidden reveal">
+          <button class="w-full px-7 py-5 flex items-center justify-between text-left hover:bg-surface transition-colors">
+            <span class="font-semibold text-ink pr-4">¿Mi obra social cubre el alquiler de equipos?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron text-ink-muted text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-7 pb-5 text-sm text-ink-muted leading-relaxed">
+              La mayoría de las obras sociales y prepagas cubre total o parcialmente el alquiler de equipamiento
+              médico de alta complejidad (concentradores, CPAP, camas ortopédicas, etc.).
+              Tenemos convenio con más de 45 obras sociales. Contáctenos para verificar su cobertura específica.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ item 4 -->
+        <div class="faq-item bg-white rounded-xl border border-edge overflow-hidden reveal">
+          <button class="w-full px-7 py-5 flex items-center justify-between text-left hover:bg-surface transition-colors">
+            <span class="font-semibold text-ink pr-4">¿Puedo devolver el equipo antes de que termine el contrato?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron text-ink-muted text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-7 pb-5 text-sm text-ink-muted leading-relaxed">
+              Sí. Nuestros contratos son flexibles. Puede devolver el equipo cuando ya no lo necesite,
+              coordinando el retiro con nuestro equipo. Solo se abona el período efectivamente utilizado.
+              El retiro no tiene costo adicional en AMBA.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ item 5 -->
+        <div class="faq-item bg-white rounded-xl border border-edge overflow-hidden reveal">
+          <button class="w-full px-7 py-5 flex items-center justify-between text-left hover:bg-surface transition-colors">
+            <span class="font-semibold text-ink pr-4">¿Qué garantía tienen los equipos?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron text-ink-muted text-sm"></i>
+          </button>
+          <div class="faq-answer">
+            <p class="px-7 pb-5 text-sm text-ink-muted leading-relaxed">
+              Todos los equipos en venta cuentan con garantía del fabricante (mínimo 12 meses) y garantía
+              adicional de ETICA. Los equipos de alquiler son revisados y sanitizados antes de cada entrega,
+              con respaldo técnico durante todo el período de uso. Si un equipo presenta problemas,
+              lo reemplazamos sin cargo.
+            </p>
+          </div>
+        </div>
+
       </div>
-    </section>
-    <section id="faq" class="w-full bg-neutral-50 py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl text-neutral-900 mb-4">
-            Preguntas Frecuentes
-          </h2>
-          <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Resolvemos las dudas más comunes sobre nuestros servicios y
-            productos
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer id="footer" class="w-full bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+        <!-- Brand -->
+        <div class="space-y-4">
+          <a href="/" class="flex items-center gap-3">
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="9" fill="#005C8F"/>
+              <rect x="15.5" y="9" width="5" height="18" rx="2.5" fill="white"/>
+              <rect x="9" y="15.5" width="18" height="5" rx="2.5" fill="white"/>
+            </svg>
+            <div class="flex flex-col leading-none">
+              <span class="text-base font-bold tracking-[0.12em]">ETICA</span>
+              <span class="text-[10px] text-white/50 uppercase tracking-[0.14em] mt-0.5">Equipamiento Médico</span>
+            </div>
+          </a>
+          <p class="text-white/60 text-sm leading-relaxed">
+            Líderes en alquiler y venta de equipamiento médico de alta complejidad.
+            Habilitados por ANMAT. ISO 9001.
           </p>
         </div>
-        <div class="max-w-4xl mx-auto space-y-4">
-          <div
-            class="bg-white rounded-xl border border-neutral-200 overflow-hidden"
-          >
-            <button
-              class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-neutral-50"
-            >
-              <span class="text-neutral-900 text-lg">
-                ¿Cuánto tiempo demora la entrega del equipo?
-              </span>
-              <i class="text-neutral-600" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-chevron-down"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="chevron-down"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  ></path>
-                </svg>
-              </i>
-            </button>
-            <div class="px-8 pb-6">
-              <p class="text-neutral-600 leading-relaxed">
-                En Capital Federal y Gran Buenos Aires la entrega se realiza en
-                24 horas. Para el interior del país, el tiempo de entrega es de
-                48 a 72 horas hábiles, dependiendo de la localidad. En casos
-                urgentes, contamos con servicio express.
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl border border-neutral-200 overflow-hidden"
-          >
-            <button
-              class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-neutral-50"
-            >
-              <span class="text-neutral-900 text-lg">
-                ¿Qué documentación necesito para alquilar un equipo?
-              </span>
-              <i class="text-neutral-600" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-chevron-down"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="chevron-down"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  ></path>
-                </svg>
-              </i>
-            </button>
-          </div>
-          <div
-            class="bg-white rounded-xl border border-neutral-200 overflow-hidden"
-          >
-            <button
-              class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-neutral-50"
-            >
-              <span class="text-neutral-900 text-lg">
-                ¿Mi obra social cubre el alquiler de equipos?
-              </span>
-              <i class="text-neutral-600" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-chevron-down"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="chevron-down"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  ></path>
-                </svg>
-              </i>
-            </button>
-          </div>
-          <div
-            class="bg-white rounded-xl border border-neutral-200 overflow-hidden"
-          >
-            <button
-              class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-neutral-50"
-            >
-              <span class="text-neutral-900 text-lg">
-                ¿Como funciona la entrega y el retiro del equipo?
-              </span>
-              <i class="text-neutral-600" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-chevron-down"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="chevron-down"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  ></path>
-                </svg>
-              </i>
-            </button>
-          </div>
-          <div
-            class="bg-white rounded-xl border border-neutral-200 overflow-hidden"
-          >
-            <button
-              class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-neutral-50"
-            >
-              <span class="text-neutral-900 text-lg">
-                ¿Puedo devolver el equipo si ya no lo necesito?
-              </span>
-              <i class="text-neutral-600" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-chevron-down"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="chevron-down"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  ></path>
-                </svg>
-              </i>
-            </button>
-          </div>
-          <div
-            class="bg-white rounded-xl border border-neutral-200 overflow-hidden"
-          >
-            <button
-              class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-neutral-50"
-            >
-              <span class="text-neutral-900 text-lg">
-                ¿Ofrecen capacitación para el uso del equipamiento?
-              </span>
-              <i class="text-neutral-600" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-chevron-down"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="chevron-down"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  ></path>
-                </svg>
-              </i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer id="footer" class="w-full bg-neutral-900 text-white py-16">
-      <div class="container mx-auto px-4">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
-        >
-          <div>
-            <div
-              class="w-32 h-10 bg-white flex items-center justify-center mb-6"
-            >
-              <span class="text-neutral-900 text-xl"> ETICA </span>
-            </div>
-            <p class="text-white leading-relaxed mb-6">
-              Líderes en tecnología médica con más de 15 años de experiencia.
-              Comprometidos con la salud y el bienestar de nuestros pacientes.
-            </p>
-            <div class="flex items-center space-x-4">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="w-10 h-10 bg-neutral-800 rounded-full flex items-center justify-center hover:bg-neutral-700"
-              >
-                <i data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-facebook-f"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fab"
-                    data-icon="facebook-f"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 320 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                    ></path>
-                  </svg>
-                </i>
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="w-10 h-10 bg-neutral-800 rounded-full flex items-center justify-center hover:bg-neutral-700"
-              >
-                <i data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-instagram"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fab"
-                    data-icon="instagram"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                    ></path>
-                  </svg>
-                </i>
-              </a>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="w-10 h-10 bg-neutral-800 rounded-full flex items-center justify-center hover:bg-neutral-700"
-              >
-                <i data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-linkedin-in"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fab"
-                    data-icon="linkedin-in"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                    ></path>
-                  </svg>
-                </i>
-              </a>
-              <a
-                href="https://wa.me/5491112345678"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="w-10 h-10 bg-neutral-800 rounded-full flex items-center justify-center hover:bg-neutral-700"
-              >
-                <i data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-whatsapp"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fab"
-                    data-icon="whatsapp"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-                    ></path>
-                  </svg>
-                </i>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-lg mb-6">Soluciones</h3>
-            <ul class="space-y-3">
-              <li>
-                <a href="#servicios" class="text-white hover:text-white">
-                  Alquiler de Equipos
-                </a>
-              </li>
-              <li>
-                <a href="#productos" class="text-white hover:text-white">
-                  Venta de Equipos
-                </a>
-              </li>
-              <li>
-                <a href="#servicios" class="text-white hover:text-white">
-                  Entrega y Retiro
-                </a>
-              </li>
-              <li>
-                <a href="#servicios" class="text-white hover:text-white">
-                  Atención Domiciliaria
-                </a>
-              </li>
-              <li>
-                <a href="#proceso" class="text-white hover:text-white">
-                  Logística Nacional
-                </a>
-              </li>
-              <li>
-                <a href="#contacto" class="text-white hover:text-white">
-                  Asesoramiento
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-lg mb-6">Empresa</h3>
-            <ul class="space-y-3">
-              <li>
-                <a href="#institucional" class="text-white hover:text-white">
-                  Sobre Nosotros
-                </a>
-              </li>
-              <li>
-                <a href="#institucional" class="text-white hover:text-white">
-                  Certificaciones
-                </a>
-              </li>
-              <li>
-                <a href="#obras-sociales" class="text-white hover:text-white">
-                  Obras Sociales
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:rrhh@eticamedica.com.ar?subject=Postulaci%C3%B3n%20laboral"
-                  class="text-white hover:text-white"
-                >
-                  Trabaja con Nosotros
-                </a>
-              </li>
-              <li>
-                <a href="/blog" class="text-white hover:text-white"> Blog </a>
-              </li>
-              <li>
-                <a href="#contacto" class="text-white hover:text-white">
-                  Contacto
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-lg mb-6">Urgencias 24/7</h3>
-            <div class="bg-neutral-800 rounded-xl p-6 mb-6">
-              <p class="text-sm text-white mb-3">Linea de emergencias</p>
-              <p class="text-2xl mb-2">0800-URGENCIA</p>
-              <p class="text-xs text-white">
-                Disponible todos los días, las 24 horas
-              </p>
-            </div>
-            <div class="space-y-3">
-              <div class="flex items-center text-sm text-white">
-                <i class="mr-3" data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-envelope"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="envelope"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-                    ></path>
-                  </svg>
-                </i>
-                <a
-                  href="mailto:urgencias@eticamedica.com.ar"
-                  class="hover:text-white"
-                >
-                  urgencias@eticamedica.com.ar
-                </a>
-              </div>
-              <div class="flex items-center text-sm text-white">
-                <i class="mr-3" data-fa-i2svg="">
-                  <svg
-                    class="svg-inline--fa fa-whatsapp"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fab"
-                    data-icon="whatsapp"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-                    ></path>
-                  </svg>
-                </i>
-                <a
-                  href="https://wa.me/5491112345678"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="hover:text-white"
-                >
-                  +54 9 11 1234-5678
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="border-t border-neutral-800 pt-8">
-          <div
-            class="flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0"
-          >
-            <p class="text-sm text-white">
-              © 2025 ETICA Medical Equipment. Todos los derechos reservados.
-            </p>
-            <div class="flex items-center space-x-6 text-sm">
-              <a
-                href="#terminos-condiciones"
-                class="text-white hover:text-white"
-              >
-                Términos y Condiciones
-              </a>
-              <a
-                href="#politica-privacidad"
-                class="text-white hover:text-white"
-              >
-                Política de Privacidad
-              </a>
-              <a href="#politica-cookies" class="text-white hover:text-white">
-                Cookies
-              </a>
-            </div>
-          </div>
-          <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <div class="px-4 py-2 bg-neutral-800 rounded-lg text-xs text-white">
-              <i class="mr-2" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-shield-halved"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="shield-halved"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8V444.8C394 378 431.1 230.1 432 141.4L256 66.8l0 0z"
-                  ></path>
-                </svg>
-              </i>
-              Habilitación ANMAT
-            </div>
-            <div class="px-4 py-2 bg-neutral-800 rounded-lg text-xs text-white">
-              <i class="mr-2" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-certificate"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="certificate"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"
-                  ></path>
-                </svg>
-              </i>
-              ISO 9001:2015
-            </div>
-            <div class="px-4 py-2 bg-neutral-800 rounded-lg text-xs text-white">
-              <i class="mr-2" data-fa-i2svg="">
-                <svg
-                  class="svg-inline--fa fa-award"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="award"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 384 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z"
-                  ></path>
-                </svg>
-              </i>
-              Certificación Internacional
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--
-    <div class="chatbot-placeholder" id="ChatbotPlaceholder" role="complementary" aria-label="ChatbotPlaceholder">
-      <div class="chatbot-placeholder__header">
-        <span>Asistente virtual</span>
-        <span class="chatbot-placeholder__status" aria-label="Proximamente disponible">Proximamente</span>
-      </div>
-      <p class="chatbot-placeholder__text">
-        Este espacio queda preparado para integrar el chatbot de ETICA.
-      </p>
-      <button class="chatbot-placeholder__button" type="button" aria-label="Integracion proxima" disabled>
-        Integracion en progreso
-      </button>
-    </div>
-    -->
-    <a
-      id="floating-whatsapp"
-      class="floating-whatsapp"
-      href="https://web.whatsapp.com/send?phone=5491112345678&text=Hola%20ETICA%2C%20quiero%20informacion%20sobre%20alquiler%20o%20venta%20de%20equipamiento%20medico."
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Contactar por WhatsApp"
-    >
-      <i aria-hidden="true" data-fa-i2svg="">
-        <svg
-          class="svg-inline--fa fa-whatsapp"
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fab"
-          data-icon="whatsapp"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-          data-fa-i2svg=""
-        >
-          <path
-            fill="currentColor"
-            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-          ></path>
-        </svg>
-      </i>
-      <span>WhatsApp</span>
-    </a>
-    <script src="main.js"></script>
-  </body>
-</html>
 
+        <!-- Servicios -->
+        <div>
+          <h4 class="font-semibold text-sm tracking-wide mb-4">Servicios</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#servicios" class="text-white/60 text-sm hover:text-white transition-colors">Alquiler de equipamiento</a></li>
+            <li><a href="#servicios" class="text-white/60 text-sm hover:text-white transition-colors">Venta de equipamiento</a></li>
+            <li><a href="#servicios" class="text-white/60 text-sm hover:text-white transition-colors">Urgencias y entrega express</a></li>
+            <li><a href="#obras-sociales" class="text-white/60 text-sm hover:text-white transition-colors">Gestión de obra social</a></li>
+          </ul>
+        </div>
+
+        <!-- Productos -->
+        <div>
+          <h4 class="font-semibold text-sm tracking-wide mb-4">Productos</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#productos" class="text-white/60 text-sm hover:text-white transition-colors">Concentradores de oxígeno</a></li>
+            <li><a href="#productos" class="text-white/60 text-sm hover:text-white transition-colors">CPAP y Auto CPAP</a></li>
+            <li><a href="#productos" class="text-white/60 text-sm hover:text-white transition-colors">Camas ortopédicas</a></li>
+            <li><a href="#productos" class="text-white/60 text-sm hover:text-white transition-colors">Sillas de ruedas</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <h4 class="font-semibold text-sm tracking-wide mb-4">Contacto</h4>
+          <ul class="space-y-2.5">
+            <li class="text-white/60 text-sm">0800-555-ETICA (38422)</li>
+            <li class="text-white/60 text-sm">info@eticamedica.com.ar</li>
+            <li class="text-white/60 text-sm">Av. Corrientes 1234, CABA</li>
+            <li class="text-white/60 text-sm">Lun–Vie 8:00–20:00 hs</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-white/40 text-xs">
+          © 2025 ETICA Equipamiento Médico. Habilitación ANMAT vigente. Todos los derechos reservados.
+        </p>
+        <div class="flex items-center gap-5">
+          <a href="#" class="text-white/40 text-xs hover:text-white/70 transition-colors">Política de privacidad</a>
+          <a href="#" class="text-white/40 text-xs hover:text-white/70 transition-colors">Términos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON
+  ══════════════════════════════════════════ -->
+  <a
+    id="floating-whatsapp"
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#25D366] text-white rounded-full px-5 py-3.5 font-semibold text-sm shadow-lg"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp text-xl"></i>
+    <span class="hidden sm:inline">Hablar por WhatsApp</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script>
+    // ── Hero parallax ──────────────────────────────────
+    const heroImg = document.querySelector('#hero img');
+    if (heroImg) {
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        heroImg.style.transform = `translateY(${scrollY * -0.15}px)`;
+      }, { passive: true });
+    }
+
+    // ── Scroll reveal ───────────────────────────────────
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+    // ── Header shrink on scroll ─────────────────────────
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // ── Premium button classes ──────────────────────────
+    document.querySelectorAll('a, button').forEach(el => {
+      const cls = [...el.classList];
+      if (cls.includes('bg-brand') || el.style.background?.includes('#25D366')) {
+        el.classList.add('btn-primary');
+      } else if (
+        cls.includes('border') ||
+        cls.some(c => c.startsWith('bg-navy')) ||
+        cls.some(c => c.startsWith('bg-white'))
+      ) {
+        if (el.tagName === 'A' || el.tagName === 'BUTTON') {
+          el.classList.add('btn-ghost');
+        }
+      }
+    });
+
+    // ── FAQ accordion ───────────────────────────────────
+    document.querySelectorAll('.faq-item').forEach((item, index) => {
+      const btn     = item.querySelector('button');
+      const answer  = item.querySelector('.faq-answer');
+      if (!btn || !answer) return;
+
+      // First item open by default
+      if (index === 0) {
+        answer.classList.add('open');
+        item.classList.add('faq-open');
+      }
+
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('faq-open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach((i) => {
+          i.classList.remove('faq-open');
+          const a = i.querySelector('.faq-answer');
+          if (a) a.classList.remove('open');
+        });
+        // Toggle clicked
+        if (!isOpen) {
+          item.classList.add('faq-open');
+          answer.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
