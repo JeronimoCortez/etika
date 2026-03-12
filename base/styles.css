@@ -154,26 +154,21 @@ html {
   background-size: 44px 44px;
 }
 
-/* ── Proceso — premium dark ─────────────────────────────── */
+/* ── Proceso ─────────────────────────────────────────────── */
 
 #proceso {
-  background-color: #0B1F2E;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
-  background-size: 52px 52px;
   position: relative;
   overflow: hidden;
 }
 
-/* Glow radial en la parte superior */
+/* Overlay oscuro sobre la imagen de fondo */
 #proceso::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 55% at 50% -5%, rgba(0, 92, 143, 0.22) 0%, transparent 65%);
+  background: rgba(11, 31, 46, 0.72);
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
 /* Cards del proceso */
