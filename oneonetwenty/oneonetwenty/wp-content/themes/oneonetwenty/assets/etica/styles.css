@@ -1,0 +1,311 @@
+/* ============================================================
+   ETICA Equipamiento Médico — Design System
+   ============================================================ */
+
+* {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #F7F9FC; }
+::-webkit-scrollbar-thumb { background: #D4E2EF; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #5A7184; }
+
+/* ── Reveal animations ─────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-d1 { transition-delay: 0.08s; }
+.reveal-d2 { transition-delay: 0.16s; }
+.reveal-d3 { transition-delay: 0.24s; }
+.reveal-d4 { transition-delay: 0.32s; }
+
+/* ── Header ────────────────────────────────────────────── */
+#header {
+  transition: box-shadow 0.3s ease;
+}
+#header.scrolled {
+  box-shadow: 0 1px 20px rgba(11, 31, 46, 0.08);
+}
+
+/* ── Hero ──────────────────────────────────────────────── */
+#hero {
+  min-height: 640px;
+}
+
+/* ── Metric numbers ────────────────────────────────────── */
+.metric-val {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+/* ── Product cards ─────────────────────────────────────── */
+.product-card .product-img {
+  transition: transform 0.5s ease;
+}
+.product-card:hover .product-img {
+  transform: scale(1.04);
+}
+.product-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.product-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 92, 143, 0.12);
+  transform: translateY(-2px);
+}
+
+/* ── Servicios — editorial rows ────────────────────────── */
+.service-img-wrap .service-img {
+  transition: transform 0.6s ease;
+}
+.service-img-wrap:hover .service-img {
+  transform: scale(1.04);
+}
+.service-cta i {
+  transition: transform 0.25s ease;
+}
+.service-cta:hover i {
+  transform: translateX(4px);
+}
+
+/* ── FAQ accordion ─────────────────────────────────────── */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.38s ease;
+}
+.faq-answer.open {
+  max-height: 400px;
+}
+.faq-chevron {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+.faq-item.faq-open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* ── Process timeline connector ────────────────────────── */
+.process-grid {
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .process-grid::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: calc(12.5% + 20px);
+    right: calc(12.5% + 20px);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    z-index: 0;
+  }
+  .process-step {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* ── Testimonial cards ─────────────────────────────────── */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 92, 143, 0.09);
+}
+
+/* ── WhatsApp FAB ──────────────────────────────────────── */
+#floating-whatsapp {
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.38);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#floating-whatsapp:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.48);
+}
+
+/* ── Background patterns ────────────────────────────────── */
+
+/* Dot grid — secciones claras */
+.pattern-dots {
+  background-image: radial-gradient(circle, rgba(0, 92, 143, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Grid de líneas — secciones claras */
+.pattern-grid {
+  background-image:
+    linear-gradient(rgba(0, 92, 143, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 92, 143, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* ── Proceso — premium dark ─────────────────────────────── */
+
+#proceso {
+  background-color: #0B1F2E;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-size: 52px 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow radial en la parte superior */
+#proceso::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 55% at 50% -5%, rgba(0, 92, 143, 0.22) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Cards del proceso */
+.process-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  transition: transform 0.35s ease, background 0.35s ease, border-color 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+.process-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(0, 168, 204, 0.28);
+}
+.process-card:hover .process-accent-line {
+  width: 48px;
+}
+
+/* Línea de acento en cada card */
+.process-accent-line {
+  width: 32px;
+  height: 2px;
+  background: #00A8CC;
+  transition: width 0.35s ease;
+}
+
+/* Número de fondo gigante */
+.process-bg-number {
+  position: absolute;
+  bottom: -12px;
+  right: 8px;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 9rem;
+  line-height: 1;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.035);
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Premium button animations ─────────────────────────── */
+
+/* Botón primario — fondo sólido brand */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease !important;
+}
+/* Shimmer sweep */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.22) 50%, transparent 70%);
+  transform: skewX(-18deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 92, 143, 0.32);
+}
+.btn-primary:hover::after {
+  left: 160%;
+}
+.btn-primary:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 2px 8px rgba(0, 92, 143, 0.20);
+}
+
+/* Botón ghost — borde o fondo transparente */
+.btn-ghost {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease, border-color 0.22s ease !important;
+}
+.btn-ghost:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(11, 31, 46, 0.10);
+}
+.btn-ghost:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* ── Logos marquee ─────────────────────────────────────── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 22s linear infinite;
+  will-change: transform;
+}
+.marquee-wrap:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Velocidad más lenta para el carrusel pequeño de métricas */
+.marquee-track-slow {
+  animation-duration: 28s;
+}
+
+/* Fade en los bordes laterales */
+.marquee-fade-wrap {
+  position: relative;
+}
+.marquee-fade-wrap::before,
+.marquee-fade-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-fade-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, white 20%, transparent 100%);
+}
+.marquee-fade-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, white 20%, transparent 100%);
+}
+
+/* ── Mobile ────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  #hero h1 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+}
