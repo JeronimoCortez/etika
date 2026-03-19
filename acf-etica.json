@@ -1,0 +1,282 @@
+[
+  {
+    "key": "group_hero",
+    "title": "Hero",
+    "fields": [
+      { "key": "field_imagen_hero",      "label": "Imagen Hero",    "name": "imagen_hero",   "type": "image",    "return_format": "array", "preview_size": "medium" },
+      { "key": "field_informacion",      "label": "Informacion",    "name": "informacion",   "type": "text",     "default_value": "Habilitados por ANMAT · ISO 9001 · +45 Obras Sociales" },
+      { "key": "field_titulo",           "label": "Titulo",         "name": "titulo",        "type": "textarea", "default_value": "El equipamiento médico que necesita su familia, <span class=\"text-brand font-display\">hoy en su casa.</span>" },
+      { "key": "field_descripcion",      "label": "Descripcion",    "name": "descripcion",   "type": "textarea", "default_value": "Alquiler y venta de alta complejidad con cobertura de obra social. Gestionamos todos los trámites. Entrega en <strong class=\"text-navy font-semibold\">24 horas en AMBA</strong>." },
+      { "key": "field_cta_hero",         "label": "CTA Hero",       "name": "cta_hero",      "type": "text",     "default_value": "Solicitar equipamiento" },
+      { "key": "field_telefono",         "label": "Telefono",       "name": "telefono",      "type": "text",     "default_value": "0800-555-ETICA" },
+      {
+        "key": "field_beneficios",
+        "label": "Beneficios",
+        "name": "beneficios",
+        "type": "group",
+        "sub_fields": [
+          { "key": "field_beneficios_texto_1", "label": "Texto 1", "name": "texto_1", "type": "text", "default_value": "Habilitación ANMAT" },
+          { "key": "field_beneficios_texto_2", "label": "Texto 2", "name": "texto_2", "type": "text", "default_value": "Certificación ISO 9001" },
+          { "key": "field_beneficios_texto_3", "label": "Texto 3", "name": "texto_3", "type": "text", "default_value": "Entrega en 24 horas" },
+          { "key": "field_beneficios_texto_4", "label": "Texto 4", "name": "texto_4", "type": "text", "default_value": "23 provincias cubiertas" }
+        ]
+      }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 0,
+    "active": true
+  },
+  {
+    "key": "group_metrics",
+    "title": "Metrics",
+    "fields": [
+      { "key": "field_met_stat_1_numero", "label": "Stat 1 — Número",     "name": "met_stat_1_numero", "type": "text", "default_value": "15+" },
+      { "key": "field_met_stat_1_label",  "label": "Stat 1 — Label",      "name": "met_stat_1_label",  "type": "text", "default_value": "Años de experiencia" },
+      { "key": "field_met_stat_1_desc",   "label": "Stat 1 — Descripción","name": "met_stat_1_desc",   "type": "text", "default_value": "En equipamiento médico de alta complejidad" },
+      { "key": "field_met_stat_2_numero", "label": "Stat 2 — Número",     "name": "met_stat_2_numero", "type": "text", "default_value": "12K+" },
+      { "key": "field_met_stat_2_label",  "label": "Stat 2 — Label",      "name": "met_stat_2_label",  "type": "text", "default_value": "Pacientes asistidos" },
+      { "key": "field_met_stat_2_desc",   "label": "Stat 2 — Descripción","name": "met_stat_2_desc",   "type": "text", "default_value": "Con resultados y seguimiento satisfactorio" },
+      { "key": "field_met_stat_3_numero", "label": "Stat 3 — Número",     "name": "met_stat_3_numero", "type": "text", "default_value": "45+" },
+      { "key": "field_met_stat_3_label",  "label": "Stat 3 — Label",      "name": "met_stat_3_label",  "type": "text", "default_value": "Obras sociales" },
+      { "key": "field_met_stat_3_desc",   "label": "Stat 3 — Descripción","name": "met_stat_3_desc",   "type": "text", "default_value": "Convenios activos con las principales prepagas" },
+      { "key": "field_met_stat_4_numero", "label": "Stat 4 — Número",     "name": "met_stat_4_numero", "type": "text", "default_value": "23" },
+      { "key": "field_met_stat_4_label",  "label": "Stat 4 — Label",      "name": "met_stat_4_label",  "type": "text", "default_value": "Provincias cubiertas" },
+      { "key": "field_met_stat_4_desc",   "label": "Stat 4 — Descripción","name": "met_stat_4_desc",   "type": "text", "default_value": "Cobertura y entrega directa en todo el país" },
+      { "key": "field_met_logos_titulo",  "label": "Logos — Título strip", "name": "met_logos_titulo",  "type": "text", "default_value": "Convenios activos con las principales obras sociales" }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 1,
+    "active": true
+  },
+  {
+    "key": "group_institucional",
+    "title": "Institucional",
+    "fields": [
+      { "key": "field_inst_badge",                    "label": "Badge",                     "name": "inst_badge",                    "type": "text",    "default_value": "Quiénes somos" },
+      { "key": "field_inst_titulo_1",                 "label": "Título línea 1",             "name": "inst_titulo_1",                 "type": "text",    "default_value": "Más que proveedores," },
+      { "key": "field_inst_titulo_2",                 "label": "Título línea 2",             "name": "inst_titulo_2",                 "type": "text",    "default_value": "somos aliados" },
+      { "key": "field_inst_titulo_3",                 "label": "Título línea 3",             "name": "inst_titulo_3",                 "type": "text",    "default_value": "en salud." },
+      { "key": "field_inst_parrafo_1",                "label": "Párrafo 1",                  "name": "inst_parrafo_1",                "type": "textarea","default_value": "Durante más de 15 años, ETICA ha sido el socio de confianza de instituciones médicas, profesionales de la salud y familias en todo el país." },
+      { "key": "field_inst_parrafo_2",                "label": "Párrafo 2",                  "name": "inst_parrafo_2",                "type": "textarea","default_value": "Cada equipo que entregamos cumple con los más altos estándares de calidad y seguridad." },
+      { "key": "field_inst_imagen",                   "label": "Imagen principal",           "name": "inst_imagen",                   "type": "image",   "return_format": "array", "preview_size": "medium" },
+      { "key": "field_inst_badge_flotante_titulo",    "label": "Badge flotante — Título",    "name": "inst_badge_flotante_titulo",    "type": "text",    "default_value": "Garantía total" },
+      { "key": "field_inst_badge_flotante_subtitulo", "label": "Badge flotante — Subtítulo", "name": "inst_badge_flotante_subtitulo", "type": "text",    "default_value": "En cada equipo y servicio" },
+      { "key": "field_inst_anios",                    "label": "Años (número badge)",        "name": "inst_anios",                    "type": "text",    "default_value": "15" },
+      {
+        "key": "field_inst_credenciales",
+        "label": "Credenciales",
+        "name": "inst_credenciales",
+        "type": "repeater",
+        "min": 1,
+        "max": 4,
+        "layout": "block",
+        "sub_fields": [
+          { "key": "field_inst_cred_icono",       "label": "Ícono (FA class)", "name": "icono",       "type": "text",     "default_value": "fa-certificate", "instructions": "Ejemplo: fa-certificate, fa-user-doctor, fa-shield-halved" },
+          { "key": "field_inst_cred_titulo",      "label": "Título",           "name": "titulo",      "type": "text",     "default_value": "" },
+          { "key": "field_inst_cred_descripcion", "label": "Descripción",      "name": "descripcion", "type": "textarea", "default_value": "" }
+        ]
+      }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 2,
+    "active": true
+  },
+  {
+    "key": "group_servicios",
+    "title": "Servicios",
+    "fields": [
+      { "key": "field_serv_badge",     "label": "Badge",     "name": "serv_badge",     "type": "text", "default_value": "Nuestros servicios" },
+      { "key": "field_serv_titulo",    "label": "Título",    "name": "serv_titulo",    "type": "text", "default_value": "Soluciones claras para cada situación" },
+      { "key": "field_serv_subtitulo", "label": "Subtítulo", "name": "serv_subtitulo", "type": "textarea", "default_value": "Acompañamos a pacientes, familias e instituciones con opciones simples, ágiles y con cobertura de obra social." },
+      {
+        "key": "field_serv_items",
+        "label": "Servicios",
+        "name": "serv_items",
+        "type": "repeater",
+        "min": 1,
+        "layout": "block",
+        "sub_fields": [
+          { "key": "field_serv_item_numero",      "label": "Número decorativo", "name": "numero",      "type": "text",  "default_value": "01" },
+          { "key": "field_serv_item_badge_texto", "label": "Badge texto",       "name": "badge_texto", "type": "text",  "default_value": "Alquiler" },
+          { "key": "field_serv_item_badge_color", "label": "Badge clases CSS",  "name": "badge_color", "type": "text",  "default_value": "bg-brand-light text-brand", "instructions": "Ej: bg-brand-light text-brand / bg-navy/8 text-navy / bg-red-50 text-red-600" },
+          { "key": "field_serv_item_titulo",      "label": "Título",            "name": "titulo",      "type": "text",  "default_value": "" },
+          { "key": "field_serv_item_descripcion", "label": "Descripción",       "name": "descripcion", "type": "textarea", "default_value": "" },
+          {
+            "key": "field_serv_item_lista",
+            "label": "Lista de beneficios",
+            "name": "lista",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+              { "key": "field_serv_lista_item", "label": "Ítem", "name": "item", "type": "text" }
+            ]
+          },
+          { "key": "field_serv_item_cta_texto", "label": "CTA Texto", "name": "cta_texto", "type": "text",  "default_value": "Consultar disponibilidad" },
+          { "key": "field_serv_item_cta_url",   "label": "CTA URL",   "name": "cta_url",   "type": "url",   "default_value": "#contacto" },
+          { "key": "field_serv_item_imagen",    "label": "Imagen",    "name": "imagen",    "type": "image", "return_format": "array", "preview_size": "medium" }
+        ]
+      }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 3,
+    "active": true
+  },
+  {
+    "key": "group_productos",
+    "title": "Productos",
+    "fields": [
+      { "key": "field_prod_badge",     "label": "Badge",     "name": "prod_badge",     "type": "text", "default_value": "Catálogo" },
+      { "key": "field_prod_titulo",    "label": "Título",    "name": "prod_titulo",    "type": "text", "default_value": "Productos destacados" },
+      { "key": "field_prod_subtitulo", "label": "Subtítulo", "name": "prod_subtitulo", "type": "text", "default_value": "Equipamiento médico certificado de las mejores marcas" },
+      { "key": "field_prod_cta_texto", "label": "CTA Texto", "name": "prod_cta_texto", "type": "text", "default_value": "Ver catálogo completo" },
+      {
+        "key": "field_prod_items",
+        "label": "Productos",
+        "name": "prod_items",
+        "type": "repeater",
+        "min": 1,
+        "max": 8,
+        "layout": "block",
+        "sub_fields": [
+          { "key": "field_prod_item_imagen",       "label": "Imagen",          "name": "imagen",       "type": "image", "return_format": "array", "preview_size": "medium" },
+          { "key": "field_prod_item_badge_texto",  "label": "Badge texto",     "name": "badge_texto",  "type": "text",  "default_value": "" },
+          { "key": "field_prod_item_badge_estilo", "label": "Badge estilo",    "name": "badge_estilo", "type": "select","choices": { "disponible": "Disponible (azul)", "popular": "Popular (blanco)" }, "default_value": "disponible" },
+          { "key": "field_prod_item_titulo",       "label": "Título",          "name": "titulo",       "type": "text",  "default_value": "" },
+          { "key": "field_prod_item_specs",        "label": "Especificaciones","name": "specs",        "type": "text",  "default_value": "" },
+          { "key": "field_prod_item_cta_texto",    "label": "CTA Texto",       "name": "cta_texto",    "type": "text",  "default_value": "Consultar precio" }
+        ]
+      }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 4,
+    "active": true
+  },
+  {
+    "key": "group_obras_sociales",
+    "title": "Obras Sociales",
+    "fields": [
+      { "key": "field_os_badge",     "label": "Badge",     "name": "os_badge",     "type": "text",     "default_value": "Cobertura" },
+      { "key": "field_os_titulo",    "label": "Título",    "name": "os_titulo",    "type": "text",     "default_value": "Trabajamos con su obra social" },
+      { "key": "field_os_subtitulo", "label": "Subtítulo", "name": "os_subtitulo", "type": "textarea", "default_value": "Nos encargamos de toda la gestión. Usted solo avisa que necesita el equipo — nosotros hacemos el resto." },
+      { "key": "field_os_cta_texto", "label": "CTA Texto", "name": "os_cta_texto", "type": "text",     "default_value": "Verificar mi cobertura" },
+      {
+        "key": "field_os_pasos",
+        "label": "Pasos",
+        "name": "os_pasos",
+        "type": "repeater",
+        "min": 1,
+        "max": 5,
+        "layout": "block",
+        "sub_fields": [
+          { "key": "field_os_paso_titulo",       "label": "Título",       "name": "titulo",       "type": "text",     "default_value": "" },
+          { "key": "field_os_paso_descripcion",  "label": "Descripción",  "name": "descripcion",  "type": "textarea", "default_value": "" }
+        ]
+      }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 5,
+    "active": true
+  },
+  {
+    "key": "group_proceso",
+    "title": "Proceso",
+    "fields": [
+      { "key": "field_proc_imagen_fondo", "label": "Imagen de fondo", "name": "proc_imagen_fondo", "type": "image", "return_format": "array", "preview_size": "medium" },
+      { "key": "field_proc_badge",     "label": "Badge",     "name": "proc_badge",     "type": "text", "default_value": "Cómo funciona" },
+      { "key": "field_proc_titulo",    "label": "Título",    "name": "proc_titulo",    "type": "text", "default_value": "Proceso simple y transparente" },
+      { "key": "field_proc_subtitulo", "label": "Subtítulo", "name": "proc_subtitulo", "type": "textarea", "default_value": "Desde su consulta hasta la entrega del equipo, lo acompañamos en cada paso." },
+      { "key": "field_proc_telefono",  "label": "Teléfono",  "name": "proc_telefono",  "type": "text", "default_value": "0800-555-ETICA" },
+      {
+        "key": "field_proc_pasos",
+        "label": "Pasos",
+        "name": "proc_pasos",
+        "type": "repeater",
+        "min": 1,
+        "max": 6,
+        "layout": "block",
+        "sub_fields": [
+          { "key": "field_proc_paso_icono",       "label": "Ícono (FA class)", "name": "icono",       "type": "text",     "default_value": "fa-headset", "instructions": "Ej: fa-headset, fa-file-invoice, fa-handshake, fa-truck-medical" },
+          { "key": "field_proc_paso_titulo",      "label": "Título",           "name": "titulo",      "type": "text",     "default_value": "" },
+          { "key": "field_proc_paso_descripcion", "label": "Descripción",      "name": "descripcion", "type": "textarea", "default_value": "" },
+          { "key": "field_proc_paso_tiempo",      "label": "Tiempo estimado",  "name": "tiempo",      "type": "text",     "default_value": "" }
+        ]
+      }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 6,
+    "active": true
+  },
+  {
+    "key": "group_testimonios",
+    "title": "Testimonios",
+    "fields": [
+      { "key": "field_test_badge",     "label": "Badge",     "name": "test_badge",     "type": "text", "default_value": "Testimonios" },
+      { "key": "field_test_titulo",    "label": "Título",    "name": "test_titulo",    "type": "text", "default_value": "Lo que dicen nuestros pacientes" },
+      { "key": "field_test_subtitulo", "label": "Subtítulo", "name": "test_subtitulo", "type": "textarea", "default_value": "Más de 12.000 familias confiaron en ETICA para el cuidado de sus seres queridos." },
+      {
+        "key": "field_test_items",
+        "label": "Testimonios",
+        "name": "test_items",
+        "type": "repeater",
+        "min": 1,
+        "layout": "block",
+        "sub_fields": [
+          { "key": "field_test_item_texto",    "label": "Texto del testimonio", "name": "texto",    "type": "textarea", "default_value": "" },
+          { "key": "field_test_item_nombre",   "label": "Nombre",               "name": "nombre",   "type": "text",     "default_value": "" },
+          { "key": "field_test_item_iniciales","label": "Iniciales (avatar)",    "name": "iniciales","type": "text",     "default_value": "" },
+          { "key": "field_test_item_ciudad",   "label": "Ciudad",               "name": "ciudad",   "type": "text",     "default_value": "" },
+          { "key": "field_test_item_producto", "label": "Producto/servicio",    "name": "producto", "type": "text",     "default_value": "" }
+        ]
+      }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 7,
+    "active": true
+  },
+  {
+    "key": "group_contacto",
+    "title": "Contacto",
+    "fields": [
+      { "key": "field_cont_badge",              "label": "Badge",                    "name": "cont_badge",              "type": "text",    "default_value": "Contacto" },
+      { "key": "field_cont_titulo",             "label": "Título",                   "name": "cont_titulo",             "type": "textarea","default_value": "Necesita equipamiento médico.\nNosotros lo resolvemos." },
+      { "key": "field_cont_subtitulo",          "label": "Subtítulo",                "name": "cont_subtitulo",          "type": "textarea","default_value": "Nuestro equipo está disponible para responder todas sus consultas. Respondemos en menos de 2 horas en horario comercial." },
+      { "key": "field_cont_whatsapp_url",       "label": "WhatsApp URL",             "name": "cont_whatsapp_url",       "type": "url",     "default_value": "https://wa.me/5491112345678" },
+      { "key": "field_cont_whatsapp_titulo",    "label": "WhatsApp Título",          "name": "cont_whatsapp_titulo",    "type": "text",    "default_value": "Escribir por WhatsApp" },
+      { "key": "field_cont_whatsapp_subtitulo", "label": "WhatsApp Subtítulo",       "name": "cont_whatsapp_subtitulo", "type": "text",    "default_value": "La forma más rápida · Respuesta inmediata" },
+      { "key": "field_cont_telefono",           "label": "Teléfono",                 "name": "cont_telefono",           "type": "text",    "default_value": "0800-555-ETICA (38422)" },
+      { "key": "field_cont_telefono_horario",   "label": "Horario de atención",      "name": "cont_telefono_horario",   "type": "text",    "default_value": "Lunes a Viernes 8:00 – 20:00 hs · Sábados 9:00 – 13:00 hs" },
+      { "key": "field_cont_email",              "label": "Email",                    "name": "cont_email",              "type": "email",   "default_value": "info@eticamedica.com.ar" },
+      { "key": "field_cont_direccion",          "label": "Dirección",                "name": "cont_direccion",          "type": "text",    "default_value": "Av. Corrientes 1234, CABA" },
+      { "key": "field_cont_direccion_detalle",  "label": "Dirección detalle",        "name": "cont_direccion_detalle",  "type": "text",    "default_value": "Buenos Aires, Argentina (C1043AAZ)" },
+      { "key": "field_cont_form_titulo",        "label": "Formulario Título",        "name": "cont_form_titulo",        "type": "text",    "default_value": "Envíenos su consulta" },
+      { "key": "field_cont_form_subtitulo",     "label": "Formulario Subtítulo",     "name": "cont_form_subtitulo",     "type": "text",    "default_value": "Completá el formulario y lo contactamos a la brevedad." }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 8,
+    "active": true
+  },
+  {
+    "key": "group_faq",
+    "title": "FAQ",
+    "fields": [
+      { "key": "field_faq_badge",     "label": "Badge",     "name": "faq_badge",     "type": "text", "default_value": "Preguntas frecuentes" },
+      { "key": "field_faq_titulo",    "label": "Título",    "name": "faq_titulo",    "type": "text", "default_value": "Resolvemos sus dudas" },
+      { "key": "field_faq_subtitulo", "label": "Subtítulo", "name": "faq_subtitulo", "type": "textarea", "default_value": "Las preguntas más comunes de nuestros pacientes y sus familias." },
+      {
+        "key": "field_faq_items",
+        "label": "Preguntas",
+        "name": "faq_items",
+        "type": "repeater",
+        "min": 1,
+        "layout": "block",
+        "sub_fields": [
+          { "key": "field_faq_item_pregunta",  "label": "Pregunta",   "name": "pregunta",  "type": "text",     "default_value": "" },
+          { "key": "field_faq_item_respuesta", "label": "Respuesta",  "name": "respuesta", "type": "textarea", "default_value": "" }
+        ]
+      }
+    ],
+    "location": [[ { "param": "page_template", "operator": "==", "value": "front-page.php" } ]],
+    "menu_order": 9,
+    "active": true
+  }
+]

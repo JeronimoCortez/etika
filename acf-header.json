@@ -1,0 +1,58 @@
+[
+  {
+    "key": "group_header",
+    "title": "Header",
+    "fields": [
+      {
+        "key": "field_header_topbar_texto",
+        "label": "Top bar — Texto izquierda",
+        "name": "header_topbar_texto",
+        "type": "text",
+        "default_value": "Envíos a todo el país"
+      },
+      {
+        "key": "field_header_topbar_email",
+        "label": "Top bar — Email",
+        "name": "header_topbar_email",
+        "type": "text",
+        "default_value": "info@eticamedica.com.ar"
+      },
+      {
+        "key": "field_header_topbar_telefono",
+        "label": "Top bar — Teléfono",
+        "name": "header_topbar_telefono",
+        "type": "text",
+        "default_value": "0800-555-ETICA (38422)"
+      },
+      {
+        "key": "field_header_nav_links",
+        "label": "Nav — Links",
+        "name": "header_nav_links",
+        "type": "repeater",
+        "min": 1,
+        "layout": "table",
+        "sub_fields": [
+          { "key": "field_header_nav_link_texto", "label": "Texto", "name": "texto", "type": "text" },
+          { "key": "field_header_nav_link_url",   "label": "URL",   "name": "url",   "type": "text" }
+        ]
+      },
+      {
+        "key": "field_header_cta_texto",
+        "label": "CTA — Texto botón",
+        "name": "header_cta_texto",
+        "type": "text",
+        "default_value": "Solicitar equipamiento"
+      },
+      {
+        "key": "field_header_cta_url",
+        "label": "CTA — URL WhatsApp",
+        "name": "header_cta_url",
+        "type": "url",
+        "default_value": "https://wa.me/5491112345678?text=Hola%20ETICA%2C%20quiero%20información%20sobre%20equipamiento%20médico."
+      }
+    ],
+    "location": [[ { "param": "options_page", "operator": "==", "value": "acf-options" } ]],
+    "menu_order": 0,
+    "active": true
+  }
+]

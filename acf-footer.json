@@ -1,0 +1,58 @@
+[
+  {
+    "key": "group_footer",
+    "title": "Footer",
+    "fields": [
+      {
+        "key": "field_footer_descripcion",
+        "label": "Descripción de marca",
+        "name": "footer_descripcion",
+        "type": "textarea",
+        "default_value": "Líderes en alquiler y venta de equipamiento médico de alta complejidad. Habilitados por ANMAT. ISO 9001."
+      },
+
+      { "key": "field_footer_serv_titulo", "label": "Servicios — Título columna", "name": "footer_serv_titulo", "type": "text", "default_value": "Servicios" },
+      {
+        "key": "field_footer_serv_links",
+        "label": "Servicios — Links",
+        "name": "footer_serv_links",
+        "type": "repeater",
+        "min": 1,
+        "layout": "table",
+        "sub_fields": [
+          { "key": "field_footer_serv_link_texto", "label": "Texto", "name": "texto", "type": "text" },
+          { "key": "field_footer_serv_link_url",   "label": "URL",   "name": "url",   "type": "text", "default_value": "#servicios" }
+        ]
+      },
+
+      { "key": "field_footer_prod_titulo", "label": "Productos — Título columna", "name": "footer_prod_titulo", "type": "text", "default_value": "Productos" },
+      {
+        "key": "field_footer_prod_links",
+        "label": "Productos — Links",
+        "name": "footer_prod_links",
+        "type": "repeater",
+        "min": 1,
+        "layout": "table",
+        "sub_fields": [
+          { "key": "field_footer_prod_link_texto", "label": "Texto", "name": "texto", "type": "text" },
+          { "key": "field_footer_prod_link_url",   "label": "URL",   "name": "url",   "type": "text", "default_value": "#productos" }
+        ]
+      },
+
+      { "key": "field_footer_cont_titulo",  "label": "Contacto — Título columna", "name": "footer_cont_titulo",  "type": "text",  "default_value": "Contacto" },
+      { "key": "field_footer_telefono",     "label": "Contacto — Teléfono",       "name": "footer_telefono",     "type": "text",  "default_value": "0800-555-ETICA (38422)" },
+      { "key": "field_footer_email",        "label": "Contacto — Email",          "name": "footer_email",        "type": "text",  "default_value": "info@eticamedica.com.ar" },
+      { "key": "field_footer_direccion",    "label": "Contacto — Dirección",      "name": "footer_direccion",    "type": "text",  "default_value": "Av. Corrientes 1234, CABA" },
+      { "key": "field_footer_horario",      "label": "Contacto — Horario",        "name": "footer_horario",      "type": "text",  "default_value": "Lun–Vie 8:00–20:00 hs" },
+
+      { "key": "field_footer_copyright",      "label": "Copyright",               "name": "footer_copyright",      "type": "text", "default_value": "© 2025 ETICA Equipamiento Médico. Habilitación ANMAT vigente. Todos los derechos reservados." },
+      { "key": "field_footer_url_privacidad", "label": "URL Política de privacidad","name": "footer_url_privacidad", "type": "url",  "default_value": "#" },
+      { "key": "field_footer_url_terminos",   "label": "URL Términos de uso",      "name": "footer_url_terminos",   "type": "url",  "default_value": "#" },
+
+      { "key": "field_footer_whatsapp_url", "label": "WhatsApp URL (botón flotante)", "name": "footer_whatsapp_url", "type": "url", "default_value": "https://wa.me/5491112345678" }
+    ],
+    "location": [[ { "param": "options_page", "operator": "==", "value": "acf-options" } ]],
+    "menu_order": 0,
+    "active": true
+  }
+]
